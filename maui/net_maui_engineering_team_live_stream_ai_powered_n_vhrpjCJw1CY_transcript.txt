@@ -1,0 +1,1955 @@
+﻿[00:00] Heat.
+[00:15] Heat.
+[00:38] Heat. Heat.
+[00:45] Heat. Heat. N.
+[00:55] Heat. Hey. Hey. Hey.
+[01:35] Hey.
+[01:42] Hey. Hey.
+[02:00] Heat. Heat. [music]
+[02:31] Good morning, good afternoon, good
+[02:33] evening depending on where you are in
+[02:34] the world. Happy May 1st.
+[02:36] >> Happy May 1st. that um the Netherlands
+[02:40] and Denmark apparently um are the only
+[02:43] countries in the world that are not
+[02:45] having a day off at May 1st, but you
+[02:47] know, here we are. Um so it's even more
+[02:50] admirable that Jacob Jacob and Shane are
+[02:54] here on their day off. It's crazy crazy
+[02:57] is [laughter] crazy. Um welcome friends.
+[03:01] >> Super excited. Um here we did this for
+[03:04] the first time a couple of weeks ago. Um
+[03:08] and then we were building um the the
+[03:11] little side project that I've been um
+[03:14] wanting to do forever
+[03:17] um which has to do with like if you go
+[03:19] to these in-person conferences um then
+[03:22] you know it might be good depending on
+[03:24] how big the conference is to have a
+[03:26] little app that shows the speakers but
+[03:28] maybe more importantly the sessions that
+[03:30] are there. Um, and now with the power of
+[03:33] C-Pilot and AI, I finally been able to
+[03:36] make that a reality. We made a little
+[03:38] start. Uh, we did some work on that last
+[03:40] time. We're not going to see that again.
+[03:42] Not for this stream at least. Um, but
+[03:44] just to follow up, if you were joining
+[03:46] us then, um, I did actually polish it
+[03:50] further and I am in talks with a big I
+[03:53] won't out them just yet with a big
+[03:54] conference to, um, kind of like have
+[03:57] them use it. So, um, that will be really
+[03:59] cool. And of course, we have a Maui day
+[04:01] coming up this month. Yes, I can now say
+[04:03] this month in May, May 29th in Poland.
+[04:05] Krakco, uh, next door to Jacob,
+[04:07] basically. He's going to be there. I'm
+[04:08] going to be there. Is going to be there.
+[04:10] Stefan from our team is going to be
+[04:12] there. Sadly, Shane's not going to be
+[04:13] there.
+[04:15] >> Yeah. Well,
+[04:16] >> this is how I find out.
+[04:17] >> Yeah. I'm sorry. [laughter]
+[04:19] I told you.
+[04:20] >> You're pay off.
+[04:23] >> Yeah. Oh, man.
+[04:24] >> Anyway, I just jumped right in here. Uh,
+[04:27] welcome all the people in chat. Uh, my
+[04:29] name is Gerald. I'm a software engineer
+[04:31] on the net Maui team and I also do
+[04:34] sometimes these type of things. Uh,
+[04:36] making videos, making blog post, doing
+[04:38] some social media posts. So that's where
+[04:39] you might know me from. Jacob, who are
+[04:42] you? What do you do?
+[04:43] >> Yeah, I'm Jacob. I'm also the developer
+[04:45] in Maui team. I'm apparently I'm also
+[04:50] sometimes doing this kind of
+[04:53] >> apparently because here we are.
+[04:57] Shane.
+[04:58] >> Yeah.
+[04:59] >> People should know you. People should
+[05:00] know who you are. [laughter]
+[05:02] >> Shane. Maui team. Uh, yeah. I mean, been
+[05:06] doing it since Sam forum stuff. And
+[05:10] >> it's been fun seeing all the the the big
+[05:13] changes everything's gone through and
+[05:15] just kind of the the the new world we
+[05:17] have now with and how how awesome Maui
+[05:20] is doing in with with like the AI
+[05:22] journey stuff. So yeah, it's been it's
+[05:25] been super exciting this year.
+[05:27] >> It's been very exciting. If you would
+[05:29] just uh little little tangent, can I
+[05:31] just pull it up here? Oh, there we go.
+[05:33] Uh Jonathan Pepper is also on our team
+[05:36] um has from the looks he has vibe coded
+[05:40] this. Let me see if I can share my
+[05:41] screen real quickly. Of course, he vibe
+[05:44] coded it because that's what we do.
+[05:45] That's all we do. [laughter]
+[05:48] Um
+[05:48] >> yeah, I mean I think it's more sort of
+[05:50] elevated from vibe coded because
+[05:52] >> yeah I I that's what I I talk about this
+[05:55] stuff a lot now with customers with
+[05:57] community people with all kinds of
+[05:59] people. Um I don't know how to call it
+[06:01] like vibe coding is like haha yeah okay
+[06:03] so you're just you know doing some fake
+[06:06] prompt and not looking at the quality.
+[06:07] It's kind of like what vibe coding means
+[06:09] to people right but then the other thing
+[06:11] is like AI powered development. How do I
+[06:13] do? How do I call this? I don't know.
+[06:16] >> Uh, agentic engineering. Like
+[06:18] >> aentic engineering like it. That sounds
+[06:21] professional enough uh to confuse people
+[06:23] to think that we're actually still
+[06:25] [laughter]
+[06:26] um so we we're an open source project.
+[06:29] So we try to be as open and transparent
+[06:32] uh doesn't work for all the things but
+[06:34] as we can be also about this um agentic
+[06:37] engineer. Oh, this is where you came up
+[06:39] with this. Okay. It was right there in
+[06:40] my face. Okay. Thank you. Um honestly.
+[06:44] [laughter]
+[06:45] >> Um, so here we have like you know a blog
+[06:48] open source. So this is also where you
+[06:50] can find cool content throughout this.
+[06:52] Uh, but the other thing is like we also
+[06:54] have the PR dashboard. So this kind of
+[06:56] like lists all the supporting Maui
+[06:59] supporting um repository. So we have
+[07:01] everything in there. Android of course,
+[07:03] Mac, iOS, uh, Maui, we have Maui Labs
+[07:06] now. Uh, but you can see like hey this
+[07:08] is like total Merch PR is crazy. um
+[07:10] co-pilot authors is like already kind of
+[07:13] like coming up there on we're we're
+[07:16] we're going to halfway there and then
+[07:18] Maui reviewer right so that's also a
+[07:20] co-pilot that actually reviews the stuff
+[07:22] and you can see well May is now all the
+[07:24] way down there because you know it's
+[07:25] only the first day um but you can see
+[07:28] like merge PRs over the last couple of
+[07:31] months like way up and then especially
+[07:33] the co-pilot author ones is like way way
+[07:35] way up right um we just had a release
+[07:38] I'm kind of scared to admit maybe
+[07:40] [laughter]
+[07:41] >> SR6 Maui SR6 which has like a lot of
+[07:45] co-pilot authored a lot of co-pilot
+[07:46] reviewed uh which we are obviously very
+[07:49] confident about but also like we have to
+[07:51] build that muscle that confidence muscle
+[07:53] a little bit uh to trust that uh we have
+[07:56] raised our co-pilot and agents enough to
+[08:00] um you know push stuff out there that we
+[08:02] actually uh can depend upon. So, uh, let
+[08:05] us know how that goes, um, in the
+[08:07] repository. But yeah, you can see like
+[08:09] we're going crazy crazy hard on this
+[08:12] stuff, um, which has really, really been
+[08:14] amazing. So,
+[08:16] as part of that, um, of course, like
+[08:19] this is, you know, us being more
+[08:21] productive with all of these things. Um,
+[08:24] but we also want to make you more
+[08:26] productive with all of this, right? Um
+[08:28] so and that means um that you're more
+[08:31] successful with building Maui apps by
+[08:34] using AI, by using co-pilots. Um and
+[08:37] that's what we're going to show you
+[08:38] today. Um I think Jacob, can I just
+[08:41] share your screen? You have a cool idea.
+[08:45] You have some things prepared um on how
+[08:47] to do that. and maybe hopefully we'll
+[08:50] also get something to something that's
+[08:53] called Dev Flow um which is now part of
+[08:56] the Maui labs repository. So
+[09:00] you talk for a little bit Jacob and then
+[09:01] we'll see where we end up because this
+[09:03] is not really scripted. We didn't
+[09:04] prepare too much. So
+[09:06] >> no scripts live coding even more scary
+[09:09] AI [laughter]
+[09:12] >> going to be but we'll try. Uh all right.
+[09:15] So uh the plan for today's stream is to
+[09:18] create a mobile app in Maui. Uh that is
+[09:22] basically a uh mobile version of Maui
+[09:27] verse. If you don't know what Maui verse
+[09:28] is, it's kind of our uh tiny Maui
+[09:32] community universe. It's uh under this
+[09:35] link and you can uh see everything
+[09:38] what's happening among uh both uh
+[09:41] Microsoft employees and community. you
+[09:44] can lots of cool cool stuff but we will
+[09:46] get into this later while the coil
+[09:51] working. So um first first thing what I
+[09:55] what I'm going to do is to launch a new
+[09:58] copilot session. I wanted to launch it
+[10:00] with you. So so you you you may be 100%
+[10:04] sure that nothing is scripted. So
+[10:08] launch
+[10:12] Gerald can quickly explain what what
+[10:15] does it mean to have it launch in yolo
+[10:16] mode.
+[10:17] >> Oh my goodness. YOLO mode. The infamous
+[10:20] yolo mode. Uh,
+[10:21] >> is it infinite anymore? I feel like we
+[10:23] all got over that. I don't know.
+[10:25] >> Yeah. Well, I we did we did we this is
+[10:27] not representative of the rest of the
+[10:29] world, I guess. Like co-pilot CLI is
+[10:31] like you have tons all the tools are now
+[10:34] co-pilots and AI, right? So, um maybe
+[10:37] most of you let me know u in the chat
+[10:39] like what are you using right now? Are
+[10:41] you kind of like in VS code using chat
+[10:43] mode? Um all of us on our team are like
+[10:46] using either CLI or something we build
+[10:48] ourselves which is called Poly Pilot. Um
+[10:51] and Poly Pilot is now being copied by
+[10:53] like the VS Code team with
+[10:55] [clears throat] like an agent app or
+[10:56] what I don't know man. Um but you know
+[10:59] I'm just kidding. Like there's tons of
+[11:01] stuff of course going on with all kinds
+[11:02] of products and Poly Pilot. We talked
+[11:04] about that before. It's kind of like
+[11:06] your um overview of fleets of co-pilot
+[11:10] CLI things. Um, but then of course if
+[11:12] you were depending on where you are kind
+[11:14] of like if you're in VS Code then you
+[11:16] probably know you'll get all these
+[11:18] things with like oh yes allow this thing
+[11:20] allowed to create a folder allow to
+[11:22] format my hard drive. Yes, yes, yes. Um,
+[11:24] and that's good. It's good that we have
+[11:28] that. Um, but also like it doesn't make
+[11:30] the agents very autonomous, right? So
+[11:32] for Copilot CLI, they introduced a YOLO
+[11:35] mode. You only live once. So you start
+[11:37] copilot- yolo and it just gets all the
+[11:40] permissions it needs. It can do access
+[11:42] everything. It can just do whatever it
+[11:45] wants. For me, it never has done a bad
+[11:47] thing. Um it didn't format my hard
+[11:49] drive. It didn't do all these things. U
+[11:51] but you know, your mileage may vary. Um
+[11:53] use with caution. Use at your own
+[11:54] discretion. All these kinds of things.
+[11:55] We're not responsible for you doing
+[11:57] that. But I use Copilot YOLO all the
+[12:00] time basically.
+[12:02] >> So that's what we did right now.
+[12:03] >> Yeah.
+[12:03] >> What have you been [laughter] doing? Um,
+[12:05] okay.
+[12:06] >> Like record a video with that
+[12:07] disclaimer. I feel like you can just
+[12:10] play that. Yeah. Yeah.
+[12:11] >> Yeah. You just play it. Hold on. YOLO.
+[12:13] Disclaimer.
+[12:14] >> Yeah.
+[12:16] While the girl was talking, I did one
+[12:19] thing. Just drag and drop this prompt.
+[12:22] Uh, I pre-prepared this prompt to be
+[12:24] honest, but I will show you exactly what
+[12:26] it is. I did it because uh I firstly
+[12:29] wrote something in my ugly English then
+[12:32] told the co copilot to use the plan
+[12:34] modes to prepare this prompt for me but
+[12:36] because it takes like 10 to 15 minutes
+[12:39] to prepare a good plan then I I decided
+[12:41] to do it like off stream and show you
+[12:44] basically what I
+[12:47] help up with. So uh this is the prompt.
+[12:51] It's not that long. Uh let's get quickly
+[12:54] uh through it. First there's a
+[12:57] description that we basically want to
+[12:58] create a net maui app called Maui. Uh it
+[13:03] is a mobile companion to this website.
+[13:06] So now cop knows uh what to do where to
+[13:10] go to get its inspiration from. Um we
+[13:14] also very importantly given it the URL
+[13:20] to the latest net 10 maui docs because
+[13:24] actually lots of model models don't know
+[13:27] about uh net 10 yet because they like
+[13:30] learn uh state of learning has been for
+[13:34] the release of net 10. So uh I always
+[13:38] give it uh uh URL to it to get to know
+[13:42] it. Um I also told it to use Maui skills
+[13:47] that I have uh installed locally on my
+[13:49] machine and also def flow. Uh Maui
+[13:53] deflow is uh our actual our today's
+[13:57] hero. We are going to talk about more uh
+[13:59] but uh quickly I just tell it to to go
+[14:04] to this Maui labs repository uh and to
+[14:08] to learn how to use Maui dev flow. And
+[14:10] this is very cool and we're going to
+[14:12] talk about it soon. Uh I also did not
+[14:14] want to uh copilot to use community
+[14:17] toolkit because uh it uh it usually does
+[14:20] it's very good with it but because of
+[14:23] the fact that it's net maui stream I
+[14:25] just wanted to use the like the cleanest
+[14:27] form of Maui. Uh I really don't emoji
+[14:32] which every single AI generates because
+[14:35] it's obvious that [laughter]
+[14:37] generated. So this is basically my
+[14:40] prompt number one to to to [snorts]
+[14:43] remember not to use emojis. And by the
+[14:45] way when I do like texting I always tell
+[14:48] it to to get rid dashes [clears throat]
+[14:51] but now it's not
+[14:54] >> uh just you know just to to hide the the
+[14:57] fact that we are using AI. Although I I
+[15:00] don't agree with people that say that
+[15:02] using AI is kind of shame of for the
+[15:05] abilities of developers. I think
+[15:07] actually it's the opposite. We should
+[15:10] use it as as much as possible.
+[15:12] >> I I was actually talking to someone
+[15:13] yesterday about this and in the
+[15:15] beginning of these things it would be
+[15:16] like you were trying to hide the fact
+[15:19] that you did everything with AI and you
+[15:20] were like yeah no I did it with the help
+[15:23] of copilot and now it's like look at
+[15:25] this thing it works I wrote zero wrote
+[15:27] code for this thing right like it's now
+[15:30] completely turned around. Uh but
+[15:31] absolutely agree like you know uh as
+[15:34] long as you're in control of what's
+[15:36] happening looking at the output verify
+[15:38] that everything works there's no shame
+[15:40] in using copilot or AI to do all the
+[15:42] things right so
+[15:44] >> exactly
+[15:44] >> yeah and it is interesting as sort of
+[15:46] both sides of folks get used to that
+[15:49] because I know that's kind of been
+[15:51] something as I've been working on
+[15:53] through issues and things you're like
+[15:55] how bad do I feel making this PR for
+[15:58] another team or something if I haven't
+[16:00] like scrutinized every single line of
+[16:02] code, you know, and it's it feels like
+[16:04] as as it as the whole ecosystem sort of
+[16:06] gets used to the way the AI conversation
+[16:10] happens,
+[16:11] >> there's less sort of like it's like well
+[16:14] did you as long as you didn't just vibe
+[16:16] code it and you sort of maybe like team
+[16:18] vibecoded it. I don't know maybe that'll
+[16:19] be the new word as as as far as like the
+[16:22] PR there's almost like this like
+[16:24] acceptance. Yeah, because it's even like
+[16:26] Maui stuff. Like if somebody creates a
+[16:28] PR for Maui and they only used C-pilot.
+[16:31] So like any of you out there, if you're
+[16:32] only using if something breaks in your
+[16:34] app and you use C-pilot to create a PR
+[16:36] for it, like don't stress out that you
+[16:38] didn't look at it too much. Like just
+[16:39] create the PR because we sort of accept
+[16:41] the fact that we can, you know, use
+[16:43] agents to interpret what you did and
+[16:45] then improve. So
+[16:48] >> yeah, as sort of the like Yeah, it's
+[16:50] interesting to see that sort of as
+[16:52] everybody's acceptance of that grows.
+[16:55] Yeah. And also usually before even we
+[16:58] look at the PR, our agents also will
+[17:00] look at the PR. So
+[17:01] >> Yeah. Yeah. There's kind of this like
+[17:03] whole Yeah. It's funny. There's always
+[17:05] this whole thing where it's sort of like
+[17:06] Yeah. You're like, "Don't bother me
+[17:08] until my agents are happy." Okay.
+[17:10] [laughter]
+[17:12] >> Yeah. Like until all my agents have said
+[17:14] something's green, I'm like, "All right,
+[17:15] now I'll look at it. [laughter]
+[17:18] >> Let them talk." Yeah.
+[17:22] >> Yeah. So going back to the prompt, I
+[17:26] also decide to skip unit test
+[17:30] to do something [laughter]
+[17:33] writing the the most beautiful tests
+[17:36] it's ever you will ever see. But we
+[17:38] don't want this on the stream. So I
+[17:40] explicitly thought that okay this time
+[17:43] we can skip it. But actually don't don't
+[17:46] do this at home.
+[17:48] Uh here's a note about the architecture.
+[17:52] Uh, and here is a vibe that I would like
+[17:55] to have. You may ask why I know that uh
+[17:58] Mau website use comic cosmic dart theme.
+[18:01] It's because I basically pipe coded it
+[18:04] like two months ago. So I I just started
+[18:07] to use this theme because it's pretty
+[18:09] cool. Uh also here are a bit here is a
+[18:13] bit info about resources about logo and
+[18:16] uh here is a very interesting thing.
+[18:19] So before uh AI writes uh a single line
+[18:23] of code, I want to uh have it provided a
+[18:27] HTML mock of how the main uh layout
+[18:31] would look like because I don't want to
+[18:33] to go on everything. Iare it to the
+[18:40] mock just like your UIUX designer would
+[18:44] do it for example in Figma. Uh and then
+[18:47] by based on my choice, the AI will
+[18:50] proceed with uh with this mock and it
+[18:55] will
+[18:57] flow to
+[18:59] and between between HTML uh mocks and
+[19:03] between what is already in the uh app.
+[19:07] Uh
+[19:08] here uh here is also uh a note about
+[19:13] like uh speed patterns that it shouldn't
+[19:15] uh fetch corals because I've already
+[19:17] given uh given a pallet of colors it
+[19:21] should use. And uh finally I told it
+[19:25] that whenever I don't like something it
+[19:28] shouldn't just implement it. it it
+[19:30] should also create new HTML uh free at
+[19:33] least three new uh HTML mocks so that I
+[19:36] can review and pick one I'm the most
+[19:39] happy with. Uh and this is basically all
+[19:43] uh we can share this prompt with you if
+[19:45] if you if you want to try to to vibe
+[19:48] this on your own. Um
+[19:52] yeah so we can go to um copilot session
+[19:55] and see what it was uh doing in the uh
+[19:59] while uh we were talking about the the
+[20:01] prompt. So it was firstly fetching web
+[20:04] content learning about what is going on
+[20:06] on this mauirus.net uh website and
+[20:10] getting all the data about it.
+[20:13] uh
+[20:15] it discovered that are basically free uh
+[20:18] free sections like editorial hero hero
+[20:21] mission contract cosmic stream that's
+[20:24] pretty cool it started to creating like
+[20:26] a CSS file with uh with mox and uh
+[20:31] hopefully uh like very soon we will have
+[20:34] uh we will see
+[20:37] the mox it's created oh you can see that
+[20:40] basically it's it created them like
+[20:44] 03. So hopefully we will see them in in
+[20:48] a couple of seconds.
+[20:52] Oh, also it created
+[20:55] folder and oh there are here we can
+[20:57] click or we can wait for it to actually
+[21:00] open it for us. But uh I will wait.
+[21:07] Uh something is happening and you can
+[21:10] see we have it.
+[21:12] Look at that. Run on time.
+[21:14] >> Yeah.
+[21:16] No script. [laughter] Remember, no.
+[21:19] But I like it.
+[21:22] I must admit I would if it actually
+[21:25] managed to create it
+[21:28] in Maui app. So maybe a question is to
+[21:30] you. Which one would like to go with?
+[21:34] One, two, three. It should wait for
+[21:36] >> Let me screenshot it to my agent to see
+[21:39] [laughter]
+[21:40] which one. Which one do I like better?
+[21:42] >> Yeah, I need I need my co-pilot to tell
+[21:44] me. [laughter]
+[21:45] >> Oh my gross.
+[21:49] >> Let's see. Uh
+[21:51] >> remember to ask not only one model but
+[21:53] basically three different models
+[21:56] >> just a bit.
+[22:00] >> Yeah, if you go back that middle one
+[22:02] that was very overwhelming.
+[22:05] I don't know. It had a
+[22:08] >> Where' they go? Oh,
+[22:12] >> there they are.
+[22:13] >> Yeah, they're that middle one. I don't
+[22:15] know. Maybe it's the gradients, but
+[22:17] there's like too many boxes. So, I would
+[22:20] say either
+[22:22] left or right. Um
+[22:26] I don't know.
+[22:26] >> Yeah, we we go with the first one.
+[22:31] >> Yeah.
+[22:32] >> Yeah.
+[22:32] >> Also,
+[22:34] David Ord now and Manny Montilla. I
+[22:36] mean, come on.
+[22:37] >> Oh, no.
+[22:39] >> [laughter]
+[22:42] >> Oh, I guess it scrolls. Yeah, scroll the
+[22:44] left one. Let's see what the left one
+[22:45] looks like if you sort of scroll down.
+[22:47] Okay, so it's kind of like that right
+[22:49] one just smaller.
+[22:51] >> Yeah, I just
+[22:53] >> also the safest one.
+[22:57] Okay, so let's
+[22:59] >> seems good.
+[23:05] Okay, [snorts]
+[23:06] we've already seen what we have to see.
+[23:08] So now we can either wait or stop and
+[23:12] tell that we've already made a decision.
+[23:21] Okay.
+[23:32] Oh, so it's actually measuring it out.
+[23:34] Nice.
+[23:35] >> Yeah. I wonder whether we should stop
+[23:37] and tell tell it that we should go with
+[23:40] one or wait.
+[23:46] >> Was it refixing some of them
+[23:49] or what's it doing?
+[23:50] >> Probably not happen.
+[23:51] >> Okay.
+[23:55] It may be focusing too much on HTML
+[23:57] tweaks needs.
+[23:59] >> Yeah.
+[24:00] Okay. Well, I mean, we can tell just go
+[24:02] with that first one. Was that one called
+[24:04] editorial hero? Is that the the actual
+[24:06] name of it?
+[24:08] >> Uh
+[24:11] I wonder
+[24:13] Mission Control Cosmic Stream.
+[24:15] >> Yeah. Okay. Let's
+[24:18] let's stuff it.
+[24:21] Yeah. Do you have to stop it or can you
+[24:23] just steer it?
+[24:25] >> I could steer it.
+[24:31] >> Okay.
+[24:33] >> Oh,
+[24:33] >> okay.
+[24:34] >> It's all right. It's all right to yell
+[24:35] at it. [laughter]
+[24:46] [snorts]
+[24:47] Okay. Yeah, I forget. Did your prompt
+[24:51] have something about using So, it talked
+[24:54] about grabbing like the skills in those
+[24:56] things. Did it say to like grab the
+[24:58] skills first and then use those to build
+[25:00] the app?
+[25:03] >> Probably no. It will be using them while
+[25:05] it is working.
+[25:07] >> Okay. I'm just curious with this type of
+[25:10] >> autoflow if if once it pulls those then
+[25:12] if it actually starts using it when
+[25:14] making sort of Maui decisions.
+[25:18] But I can show you my skills.
+[25:21] >> Okay.
+[25:25] >> Probably we don't need yellow for this
+[25:27] but it's a habit.
+[25:29] >> Yeah.
+[25:31] >> Yeah. Are these are any of these the
+[25:33] ones that it pulled in? Okay. So these
+[25:34] are the ones that it pulled in these
+[25:36] plugins or do you have these globally?
+[25:39] >> These are globally but I told and prompt
+[25:42] to use them. So I hope it will be using
+[25:45] them and
+[25:46] >> okay
+[25:47] >> skills are from David's repository Maui
+[25:51] skills they are very useful and we also
+[25:54] have Maui def skill.
+[25:58] >> Are any of these from net skills or are
+[26:00] these all just from David's?
+[26:02] >> These are all from David's.
+[26:05] >> Okay.
+[26:07] >> Yeah, we're trying to um
+[26:10] unify that somehow. I think on the net
+[26:13] skills we only have the Maui doctor
+[26:16] skill there right now and maybe
+[26:18] something else. The net Maui doctor,
+[26:20] sorry. Um and then on the Maui
+[26:23] >> view over there even
+[26:25] >> Oh, really? Maybe we Oh, I think we
+[26:27] added some more. You're right. Um and
+[26:30] then um on the Maui labs we also kind of
+[26:33] like turn that repository into a
+[26:35] marketplace so that can have like
+[26:36] plugins and skills and agents and
+[26:39] >> all the things uh to kind of like be
+[26:41] able to iterate on those a little bit
+[26:43] faster. So you should be able to see
+[26:45] them pop up there because now um David
+[26:47] Ort now had some skills on a repository
+[26:50] on his GitHub account. Um Jonathan um
+[26:54] had some uh on on his account. So, you
+[26:56] know, we're trying to kind of like unify
+[26:58] all those amazing skills and we
+[26:59] definitely need I think I said that for
+[27:01] the last stream as well. Um something
+[27:03] for kind of like coming up with cool
+[27:04] Maui designs uh in there as well for
+[27:07] people like me who don't know anything
+[27:09] about designing and still want to have
+[27:11] good-looking POWI apps. So, um that's
+[27:14] definitely something that we're looking
+[27:15] into. If you're completely new, like
+[27:17] what's this AI thing? skills are like
+[27:21] actually again I was talking to some
+[27:23] people yesterday um and they came up
+[27:25] with kind of like an anal analogy for
+[27:27] all these things uh with like hey um
+[27:30] your instructions is kind of like the
+[27:31] blueprint of your house and what you
+[27:33] your house looks like or needs to look
+[27:35] like or whatever. Um and then the agent
+[27:37] is kind of like you know your plumber or
+[27:39] your um guy electrician or whatever. And
+[27:42] then the skills is kind of like your
+[27:44] your hammer or your screwdriver or
+[27:45] whatever. they're interchangeable
+[27:47] between agents and they just, you know,
+[27:49] allow you to do this this one kind of
+[27:50] like task. Um, and with a skill, you can
+[27:53] also kind of like have supporting
+[27:55] scripts and whatnot. Um, so that it's
+[27:57] kind of like repeatable, a little bit
+[27:58] more deterministic. Um, and I think uh
+[28:01] maybe also important in this age um that
+[28:05] it's um
+[28:08] um more token efficient like I can say
+[28:11] to a model do this thing. Um, I actually
+[28:15] I used it to create a a PowerPoint slide
+[28:18] deck the other day and it will figure it
+[28:20] out. Um, and I think it created some
+[28:22] Python script and did all these kinds of
+[28:24] things. It will figure out how to do it.
+[28:26] But is that necessarily the best way?
+[28:28] Maybe not. And then if I ask it the next
+[28:30] day or another model, it will figure out
+[28:31] another way to do it, right? It will
+[28:33] figure a way out usually to do things. U
+[28:35] but if you want to be sure to kind of
+[28:37] like it does it in an efficient way, in
+[28:39] a way that you like that you want to
+[28:41] kind of like model it. um then you
+[28:44] probably want to create a skill with
+[28:46] kind of like maybe supporting scripts
+[28:48] and whatnot. So it will just know that
+[28:50] whenever you say like hey I want to
+[28:51] create a slide deck I want to implement
+[28:54] MVVM in my Maui app I don't know um
+[28:57] stuff like that that it will pick up
+[28:59] that skill and start working through
+[29:00] that with those instructions like it did
+[29:02] the last time and that time before
+[29:05] or you can for example create PowerPoint
+[29:09] presentations firstly without any skills
+[29:11] and when you are satisfied with it you
+[29:13] can just prompt
+[29:16] compiler to now based on our session
+[29:18] create a skill before creating
+[29:20] presentations. So now you will be sure
+[29:22] that next time you you actually create a
+[29:24] presentations everything will go
+[29:26] smoothly.
+[29:27] >> Yep.
+[29:28] >> Uh we have someone on the YouTubes
+[29:31] asking what model is this? Uh there is a
+[29:34] cool functionality in Copilot CI that
+[29:38] allows you to enable streamer mode or
+[29:40] whatever you want to call it. Um so that
+[29:42] it hides like all the details that it's
+[29:44] not supposed to show or blah blah blah.
+[29:46] Um oh there it is. streamer mode. Um,
+[29:49] and I think yeah, what what this was is
+[29:52] some Opus model. Um, we have some
+[29:55] variations for internal ones. Uh, but I
+[29:57] think the base model for this is Opus.
+[30:00] >> Yeah, it's Opus 47 with slides
+[30:03] improvements.
+[30:04] >> There you go.
+[30:04] >> I don't
+[30:07] >> I don't think this is a very secret one.
+[30:09] No,
+[30:10] >> but it just
+[30:11] >> it makes it see it makes a theme fancier
+[30:14] like we're using some cool hidden model
+[30:16] or something. [laughter]
+[30:19] >> Rocket awesome model thingy jiggy.
+[30:22] >> Yeah, it's way less Yeah, it's way less
+[30:25] interesting than you'll than you
+[30:26] probably think. Or it's way more
+[30:28] interesting. I don't know.
+[30:31] Be excited.
+[30:34] Uh uh while we're watching this, there
+[30:37] is the question that we always get Linux
+[30:39] support and we finally have an answer.
+[30:43] [laughter]
+[30:44] >> We have Linux support. What? Um so again
+[30:49] as part of kind of like you know u the
+[30:51] age of AI um we have now the capability
+[30:54] to finally provide you with a Linux
+[30:57] backend um just because we can point
+[30:59] some co-pilots to it and iterate over
+[31:02] that on the side without spending um our
+[31:05] limited human resources on that um um
+[31:08] which we haven't been able to do so far
+[31:10] but now it has been released excuse me I
+[31:13] should not drink sparkling water while
+[31:15] on stream um with the Maui Labs
+[31:19] repository um where we have a couple of
+[31:22] experimental things and there is a full
+[31:25] GTK4 backend. It's released. It's on
+[31:28] Nugget. I need to record a video on it.
+[31:30] Uh maybe if that's something that you're
+[31:32] interested in, we should do a stream
+[31:33] about that as well. Um but yeah, it's
+[31:36] there for you to use. So go look at it.
+[31:39] Let us know what you think. And more
+[31:41] cool goodies to come. So we finally have
+[31:43] the next support. Ha,
+[31:45] >> Maui Labs.
+[31:47] >> Maui Labs. There's the repository. Yeah.
+[31:49] Amazing. Um, so, you know, there's a
+[31:52] bunch of stuff in there. We have a Maui
+[31:53] CLI now. So, you saw Jacob just now u
+[31:58] point in the prompt to like, hey, here's
+[32:01] Maui Labs figure out how um Deflow
+[32:05] works, right? That was in the prompt
+[32:06] here somewhere. Uh but um we also have
+[32:09] the Maui CLI and that's a .NET CLI tool,
+[32:13] a global tool and you can just pull it
+[32:15] down and then you have like Maui with
+[32:16] all kinds of goodness. Uh and one of the
+[32:19] things is like Maui doctor right so you
+[32:20] can inspect your environment you can do
+[32:22] all these things but it also has Maui
+[32:24] dev flow which is the thing that we are
+[32:26] seeing here um which um has the way that
+[32:31] works is it kind of like implants a
+[32:33] little agent in your app only for debug
+[32:36] right um that is actually an HTTP agent
+[32:40] and that allows deaf flow to kind of
+[32:42] like communicate with your app directly
+[32:45] so what would typically
+[32:46] >> go back to the co-pilot window, Jacob,
+[32:48] real quick just while drill. Yeah, there
+[32:49] we go. All right, keep talking
+[32:52] stuff.
+[32:53] >> So, yeah.
+[32:53] >> Um maybe we'll see it scroll by indeed.
+[32:55] Oh, you see deflow tree returning empty
+[32:57] is odd. Yes, that's definitely odd. Uh
+[32:59] but what would happen before this is
+[33:01] that it would take a screenshot, right?
+[33:03] It still does that.
+[33:04] >> Yeah,
+[33:04] >> enables that as well.
+[33:07] >> Would figure out like, hey, I need to
+[33:09] take a screenshot of the simulator and
+[33:10] it would kind of like visually go
+[33:12] through it and then be like, oh, okay, I
+[33:14] it's probably this. But now with dev
+[33:16] flow that takes it a step further. It
+[33:18] can actually because it's inside the
+[33:19] app. So it can actually give you the
+[33:21] whole visual tree that is right now on
+[33:24] the screen um and work with that and
+[33:26] then map that to where that is in the
+[33:28] code and actually fix it in the right
+[33:30] place in code. So that's just one of the
+[33:31] amazing things that makes working um
+[33:34] copilot with your app with deflow um so
+[33:37] much more efficient. So little HTTP
+[33:40] server in your app. Uh the deflow client
+[33:43] running here through co-pilot is
+[33:44] communicating with that. Can take
+[33:46] screenshots. It can interact with
+[33:48] elements. It can click buttons. It can
+[33:50] do things. Um going back to a little bit
+[33:52] earlier what I mentioned with the um
+[33:55] conference app. Um I built that. That's
+[33:58] what I typically do. That's my workflow.
+[34:00] I build an app for iOS. I typically love
+[34:03] iOS. So I build it out for iOS
+[34:05] whole things. Uh and then you know as
+[34:08] Maui goes it it looks and behaves the
+[34:10] way that it should on iOS. Perfect. That
+[34:12] all looks great. But then by nature
+[34:15] whenever you launch it on another
+[34:16] platform 90% will work but you have some
+[34:19] platform things to figure out right I
+[34:21] was actually happily surprised that it
+[34:23] pretty much worked um on Android but I
+[34:25] launched it on Android and I said to
+[34:27] co-pilot run through this app with
+[34:30] deflow go through all the edge cases all
+[34:33] the functionalities and see what's there
+[34:36] still to be done on the Android
+[34:37] >> one sec sorry on the on the dev flow
+[34:40] thing Jacob did it pull in the skills
+[34:43] Can you tell into your folder? Cuz I
+[34:46] know sometimes if the skill doesn't come
+[34:48] in, it it doesn't quite figure out how
+[34:51] Dev Flow like make sure it's using the
+[34:52] Maui AI debugging skill.
+[34:55] >> I think it does because I was using Deaf
+[34:58] Flow before.
+[35:00] >> Yeah, I'm just curious if it used it.
+[35:02] Maybe just type a message real quick and
+[35:03] just say like, "Are you using the Maui
+[35:06] debugging skill?" cuz it's like trying
+[35:07] to probe the
+[35:10] um
+[35:12] >> I think I've seen somewhere here that it
+[35:14] actually use Oh, here ski mode.
+[35:16] >> Oh, there used the skill. Okay. Because
+[35:17] it started like probing the routes and
+[35:19] it said it's trying to inspect the DLL
+[35:21] and things. So, I don't know. So, I
+[35:23] didn't know if we needed to to steer it
+[35:25] a little bit here. Sorry, Gerald. I
+[35:27] swear.
+[35:28] >> No worries.
+[35:28] >> That we kept the co-pilot on.
+[35:31] >> Yeah, because see like it looks like
+[35:32] it's uh direct.
+[35:36] Okay. It looks like it's eventually
+[35:37] getting there.
+[35:39] >> Yeah. And it created
+[35:42] >> Oh, because it's pulling. Did it grab
+[35:43] the right dev flow? It looks like it's
+[35:45] grabb It grabbed the old one cuz that's
+[35:47] that's
+[35:49] the one on John's old repository because
+[35:51] look at the Is that you are like the
+[35:53] tool?
+[35:53] >> Oh, yeah. It says ref right there. Yeah.
+[35:55] >> Yeah, that says ref. So, I don't know if
+[35:58] I don't know if it grabbed the wrong dev
+[35:59] flow. Maybe just post a message in there
+[36:03] that it should use the um
+[36:06] uh the Maui Labs one. Like make sure
+[36:09] you're using the Maui Labs. I had this
+[36:11] happen too the last time. Um I don't
+[36:14] know if John can unlist that or what or
+[36:16] how that how that works. But uh
+[36:19] >> yeah.
+[36:19] >> Yeah, that might be a good idea to
+[36:22] explore. Uh because that's that's how it
+[36:25] works with these models, right? they at
+[36:27] some point will be trained up to a
+[36:29] certain point and then there was deaf
+[36:31] flow which is an experiment from um from
+[36:34] John on our team and he released that
+[36:36] and we were like hey this is a great
+[36:37] idea let's make it something official so
+[36:39] now we wanted to use the official
+[36:41] product but it kind of like only knows
+[36:43] about the unofficial one so it tends to
+[36:45] kind of like lean towards that one um
+[36:47] while we of course wanted to use the
+[36:49] other one
+[36:50] >> it's trying to use the dev flow CLI from
+[36:52] Reddith too I think that's where it's
+[36:54] okay that's where it's getting lost
+[36:57] So you might need to tell it to use like
+[36:58] the Maui CLI, not the Red CLI.
+[37:01] >> Yeah.
+[37:02] >> Yes. Do it in all caps. Jacob
+[37:06] >> I did.
+[37:10] >> Okay.
+[37:10] >> Yeah. The actual CL. Okay.
+[37:13] >> Tell it otherwise a cute bunny will die.
+[37:15] >> The red CLI is Oh, hey. There we go.
+[37:17] Okay. Cool. Now it got on track. All
+[37:19] right. [laughter]
+[37:21] >> You see? Yeah. Developers are needed.
+[37:24] Yeah. Yeah. [laughter]
+[37:28] >> Awesome. Yeah. So, that's that's kind of
+[37:30] like if you um I guess if you want to
+[37:34] prevent this um then you probably want
+[37:37] to switch it around and and manually
+[37:39] install the Maui CLI yourself and then
+[37:41] you can do Maui Deflow init I think is
+[37:44] the command and that will kind of like
+[37:45] pull down um all the skills and whatever
+[37:48] that teach your teaches your co-pilot
+[37:50] how to work with deflow. um um in your
+[37:54] project and then it should pick that up
+[37:56] automatically and it will automatically
+[37:57] use the right project and the right
+[37:59] packages etc etc.
+[38:01] >> Um so that's that's definitely one of
+[38:03] the wonderful things that you will
+[38:04] figure out if you work with AI and
+[38:06] co-pilot like you have to be explicit at
+[38:08] times at what to use and how to use it.
+[38:11] Um and that's definitely where the the
+[38:12] instructions and the skills and all the
+[38:14] things um definitely come in.
+[38:19] >> Cool. Yeah, I was talking about before
+[38:21] like oh phase one
+[38:22] >> phase one
+[38:24] >> defin work there you go
+[38:26] >> yeah I I bet it was doing like
+[38:28] scaffolding so the code is probably very
+[38:31] code base is actually now very very big
+[38:33] but
+[38:34] >> this is just a bare app yeah
+[38:36] >> yeah
+[38:37] that goes
+[38:38] >> full visibility
+[38:40] >> f our UI right
+[38:44] >> purple deep purple etc etc
+[38:48] I mean Even demos and live streams, they
+[38:50] just get boring because we're all just
+[38:52] watching a terminal window doing
+[38:53] co-pilot all work, right? Like it's what
+[38:56] are we even here for?
+[38:57] >> Yeah, I know. I'm going to go eat some
+[38:59] cereal.
+[39:01] >> See you in an hour. Bye.
+[39:02] >> Yeah. [laughter]
+[39:04] I picked like learning piano because of
+[39:07] agents working and I don't have anything
+[39:09] to do. So [laughter]
+[39:12] >> yeah,
+[39:14] that's funny.
+[39:18] Yeah. So, bring us your questions
+[39:19] because we have time on our hands
+[39:21] because, you know, this is just all
+[39:22] going by itself. [clears throat] Um,
+[39:26] yeah, but what I was mentioning like,
+[39:27] you know, I I could just keep going on
+[39:29] and on about how how much more
+[39:31] productive this makes me and it's not
+[39:32] even like overstating it or just saying
+[39:34] it for, you know, marketing benefits or
+[39:37] whatever. It's just like I I really and
+[39:39] we all on team are feeling that. Um and
+[39:41] and then with the example like just now
+[39:43] like you know I built the whole iOS
+[39:44] thing and I can just say to my testing
+[39:47] personal assistant like hey run through
+[39:49] the whole Android app um and see you
+[39:52] know what what things you're seeing that
+[39:54] might need still um some work or
+[39:56] whatever on the Android side and it will
+[39:57] go off and it will do all those things
+[39:59] and 10 minutes later I will have a to-do
+[40:01] list um of like hey these are the things
+[40:03] that you know look a little bit off or
+[40:05] that we still need to fix um and I might
+[40:08] need to make some decisions um and for
+[40:10] of the things it's just like you know I
+[40:12] I got a pretty good plan on how to do
+[40:13] that and then you know I switch to
+[40:15] autopilot uh to have it not bother me
+[40:18] again and I say hey now implement all
+[40:20] these things and it will go off and it
+[40:21] will fix it as well um and I got the
+[40:24] whole Android version uh done as well
+[40:26] and then the other thing I still needed
+[40:29] to get it to uh also release it for me I
+[40:31] guess uh and then I need to ask it like
+[40:33] okay now what do I need to do to release
+[40:36] um and then it will give me a checklist
+[40:37] it I will say the checklist is pretty
+[40:39] helpful especially me on the Apple.
+[40:42] Click here, click there, get the
+[40:44] certificate. No, that doesn't look
+[40:46] right. Do it again. Um, but there's
+[40:49] still some manual work. If there's MCP
+[40:51] service to connect to the Apple
+[40:52] developer portal directly, that would be
+[40:54] great. U but otherwise, like it's
+[40:56] already super helpful that it will give
+[40:58] you the steps that you'll actually need
+[41:00] to do.
+[41:01] >> Yeah. And it's cool because you can even
+[41:02] do all those steps through like a GitHub
+[41:04] action. like I uh like on my Windows
+[41:08] computer like I don't I didn't even have
+[41:10] a Mac and I just told it well how can I
+[41:12] how can I deploy this to the app store
+[41:15] and it's like well we can use a GitHub
+[41:16] action with Mac OS to do all the
+[41:20] certificate signing and setups and
+[41:22] whatever and I'm like okay cool just
+[41:24] walk me through it and it just like
+[41:26] walks me through generating the circuit
+[41:27] certificate putting it somewhere and so
+[41:30] like I was able to just get GitHub
+[41:31] actions to release my iOS app from a
+[41:35] Windows computer just using, you know,
+[41:38] C-pilot. Um, which is great because
+[41:41] it's, you know, before AI, it's like the
+[41:43] biggest barrier for me releasing an app
+[41:45] was reading Apple docs on how to
+[41:48] generate my certificates. [laughter]
+[41:49] >> Yes.
+[41:51] >> There's like that weird thing even where
+[41:53] you install the certificate locally and
+[41:54] it still says it fails and didn't work,
+[41:56] but it actually did work. And like,
+[41:58] yeah, I don't even know when you do the
+[42:00] mobile provisioning profile. It's so
+[42:02] confusing. [laughter]
+[42:05] Yeah. So, it's cool. It's It's Yeah,
+[42:07] it's nice having those those flows for
+[42:09] it. And like like Gerald was saying with
+[42:11] skills like um I mean I use skills for
+[42:14] pretty much everything. Like even if I
+[42:16] just have some mundane task of the way
+[42:18] I'm navigating my directories or look
+[42:20] searching stuff. I'll say create a skill
+[42:22] to do this. You know, it's just sort of
+[42:24] this really fast way to compartmentalize
+[42:27] even just these really little tasks you
+[42:29] do every day. So
+[42:32] yeah, it doesn't necessarily have to be
+[42:33] this high concept implementation of
+[42:35] something. So basically just write me a
+[42:38] script. Like we just recently, one of
+[42:41] the I don't know one of the I'm just
+[42:42] thinking of fun things we vibe coded. So
+[42:44] like I know one of the issues with Maui
+[42:46] has been um our milestones have always
+[42:49] been a bit random um as far as
+[42:51] attributing stuff. So I basically just
+[42:53] left an autopilot on for, you know, a
+[42:56] couple hours and had it write a write a
+[42:58] GitHub action with a PowerShell script
+[43:01] to auto milestone all of our issues and
+[43:03] pull requests. And now every single
+[43:05] issue in poll request we have in Maui
+[43:07] just gets auto milestone to where it
+[43:08] gets released, you know. And this is
+[43:11] this is something that was just
+[43:12] happening in the background while I was
+[43:13] I don't know learning to play piano at
+[43:16] work. [laughter]
+[43:17] Not really. I was being productive in
+[43:19] other ways, but yeah. Uh, is it making
+[43:23] the complete Maui verse app? Yes, I
+[43:25] think so. That was the
+[43:29] >> That should be the case. Yep.
+[43:30] >> Yeah,
+[43:34] >> probably
+[43:36] like notifications, but I think it would
+[43:38] be cool to to prompt them.
+[43:40] >> Yeah. like you know that's that's I
+[43:42] think we talked about that in the last
+[43:43] stream as well like um
+[43:46] I think a misconception that people
+[43:48] might have is like hey I put in like one
+[43:50] prompt and I watch the whole thing get
+[43:53] built that's what the social med media
+[43:56] influencers uh want you to believe um it
+[43:59] doesn't quite work like that if you
+[44:01] really want something that you can
+[44:02] actually release um so you know it's
+[44:06] definitely need some steering here and
+[44:08] there um we did give it a prompt you We
+[44:11] did give it and that definitely helps.
+[44:13] We did give it deflow um to um um be
+[44:17] able to self-verify, selfch check, walk
+[44:19] through the application with like hey
+[44:21] the thing that I'm actually implementing
+[44:23] let's run it. It knows how to run it
+[44:25] inside the application. It knows how to
+[44:26] inspect it knows how to interact with
+[44:28] it. So the thing that I copilot just
+[44:31] implemented um is that also actually
+[44:34] working as intended actually at runtime.
+[44:36] So we gave it all the tools to kind of
+[44:38] like do that. because that makes it so
+[44:39] much more autonomous to actually you
+[44:41] know um go through it um all by itself.
+[44:44] Uh so that will take it so much further.
+[44:47] Um but you know you still have to kind
+[44:48] of like provide input from time to times
+[44:51] or it will get stuck on something. Um
+[44:53] and it's definitely our job to then make
+[44:55] the skills and the things better uh the
+[44:57] tooling better to not let that happen so
+[44:59] that we can have you in prompt input
+[45:03] some prompt and it will just go off and
+[45:05] do all the things. Uh but you know uh
+[45:07] there and there the other thing is like
+[45:09] you know how far do you want to go like
+[45:10] sure it's easy enough to get a list of
+[45:13] uh community contributions out there
+[45:15] right like easyish with a nice design
+[45:18] easyish uh but then like push
+[45:20] notifications or whatever I think that
+[45:22] will always be hard hopefully like Apple
+[45:25] and Google will invest in their tooling
+[45:27] in their stuff as well to make that
+[45:30] easier but it's just super hard to even
+[45:32] debug and and kind of like test that to
+[45:35] begin with right like for our developers
+[45:37] um but even more in an automated way. So
+[45:40] um there will always be work to do
+[45:42] there. Um but yeah uh and it's of course
+[45:46] dependent on what the things are that
+[45:47] you want to implement right like if you
+[45:49] want to have push notifications that's
+[45:51] always someone like oh I want to have
+[45:52] push notifications because the concept
+[45:54] is super simple it's just hey we get a
+[45:56] notification whenever something's
+[45:57] happened but how do you get that that
+[45:59] trigger right like what's going to be
+[46:01] the trigger um whenever we pull in kind
+[46:03] of like the data to be very honest I
+[46:05] don't even know where the data comes
+[46:06] from right now for the Maui verse.net
+[46:08] But whenever something gets updated um
+[46:10] we need to send some signal to like the
+[46:12] Apple and the Google servers of like hey
+[46:13] we need to trigger a notification and
+[46:15] then on the app side we need to register
+[46:17] that somewhere right so there's also
+[46:20] some kind of like server side plumbing
+[46:22] whatever u that we need to do there to
+[46:24] make that all happen and then you get
+[46:25] into the territory like where is that
+[46:27] all going to run who's going to pay for
+[46:28] that etc etc so you're going into whole
+[46:31] kinds of territories u for a simple
+[46:33] notification thingy um that just shows
+[46:36] up right like that's
+[46:37] Um, I remember the first time that I
+[46:40] implemented push notifications and I
+[46:42] went to my wife and I was like, "Look,
+[46:43] look, I [laughter]
+[46:45] the notification came up." She's like,
+[46:46] "Yeah, doesn't every app have like
+[46:49] [laughter]
+[46:50] anyway it does feel magical."
+[46:56] >> Uh, there were some other things. Let's
+[46:57] scroll back a little bit. Uh, I think
+[46:59] this is running through here, so that's
+[47:01] fine. Another question was, is it
+[47:02] possible to connect this to local model
+[47:05] in O Lama or something else?
+[47:07] >> Um, I think they recently,
+[47:11] >> yeah, a couple weeks ago, two weeks ago,
+[47:14] >> I think they
+[47:15] >> by y or something they call it.
+[47:17] >> Yeah, I think there's a couple of
+[47:18] variations like bring your own model
+[47:21] entirely. So, you can just put your
+[47:22] model in there, but also by y so bring
+[47:26] your own key. uh where you just get like
+[47:29] you know you sign up to um
+[47:32] >> foundry
+[47:32] >> cloud directly or open whatever is it
+[47:36] openai no open open code I don't know
+[47:38] you have a couple of AI um um um vendors
+[47:42] of course these days you can just go
+[47:44] there
+[47:45] >> foundry only foundry
+[47:47] >> I only use foundry that's [laughter]
+[47:48] that's true get your API key from there
+[47:50] plug it in and it will just go out to
+[47:53] that API and and kind of like use it
+[47:55] there
+[47:57] >> oh My goodness, look who entered the
+[47:59] chat.
+[48:00] >> And then I think that is the local
+[48:02] Microsoft Innovation Hub. Wow.
+[48:06] >> Oh, hey, look at that in the flesh. Look
+[48:09] at him dishing out some knowledge with
+[48:11] that with that uh picture there.
+[48:15] >> I'm just like, did he pose for that
+[48:16] picture of him talking or was he
+[48:18] actually [laughter] talking like was it
+[48:20] that like
+[48:20] >> there for five minutes like is this
+[48:22] right?
+[48:22] >> Yeah. Yeah. Does this look interesting
+[48:24] enough?
+[48:25] >> Yeah. Now, act like you're saying
+[48:26] something interesting. Act like you're
+[48:28] giving an elevator pitch. Is this good?
+[48:30] [laughter]
+[48:32] >> His other pictures, his other iterations
+[48:34] were like,
+[48:35] >> "Yeah, [laughter]
+[48:37] go get that perfect picture in there."
+[48:40] Uh, let's see. Can you specify
+[48:41] performance constraints, startup times,
+[48:43] or max file size? Yeah, I think those
+[48:45] are those are important notes to make.
+[48:48] Um,
+[48:50] that kind of comes into play with a lot
+[48:52] of the testing aspects of things. So um
+[48:55] a lot of times when you're sort of when
+[48:57] you're trying to finalize it or say okay
+[48:59] now this is something I want to
+[49:00] productize or get past that vibe coding
+[49:03] standpoint this is where you'll throw
+[49:05] like the verification points in and
+[49:08] you'll just you'll have it you'll I mean
+[49:10] that's basically your testing loop right
+[49:11] so you'll essentially say um you know
+[49:14] here are here's how it needs to act this
+[49:16] is the performance that needs to happen
+[49:18] this is the startup time these are the s
+[49:20] file sizes we want um I mean what will
+[49:23] happen is that honestly co-pilot will
+[49:26] just iterate until it makes you happy
+[49:28] based on those constraints you've made.
+[49:30] Um and so that a lot of times that's how
+[49:32] we go about um fixing even Maui issues,
+[49:36] right? Is we will have a bug and we set
+[49:40] up a test and we give Copilot a set of
+[49:43] constraints that basically says these
+[49:45] seven things have to be true for you to
+[49:48] accept that you've fixed this bug. and
+[49:51] then we just leave it on and running.
+[49:54] Um, so I think I think the uh the
+[49:57] constraints thing is a is an important
+[50:00] thing to um
+[50:03] to highlight uh because that's really
+[50:05] what gets you over that edge of of of
+[50:07] being successful is when you can orient
+[50:10] and constrain co-pilot to the right
+[50:12] solution. Um yeah, so I think that's a
+[50:16] good one. With co-pilot sale, I spend
+[50:17] out multiple agents in parallel to work
+[50:19] on different things at the same time. I
+[50:21] think it depends on your prompt
+[50:24] um what it does. So I know um like if
+[50:29] you tell it to do a code review, it has
+[50:31] some like embedded agents that it'll
+[50:34] spin up to do some code reviews. Um
+[50:37] there's like an experimental fleet mode
+[50:39] which I'll explain about agents, but
+[50:40] yeah, it's it's it uses a I don't I mean
+[50:43] I don't know specifically what it uses.
+[50:44] I don't work on the product. So this is
+[50:46] only my observations with the agents.
+[50:48] Like if you ask it stuff, it'll
+[50:50] sometimes spin off agents to do that
+[50:53] extra work. So like yeah, I know my
+[50:55] co-pilot CLI, I I will say please do a
+[50:58] thorough code review and what it'll do
+[51:00] is it'll spin up something like um this
+[51:04] is a code review agent and this is a
+[51:06] this is a security agent or something
+[51:09] like that. So I think on its own it sort
+[51:10] of it's it does that. Uh, and then you
+[51:13] could also tell it to do that.
+[51:15] >> Yeah. When you add this like slashfleet
+[51:18] commands, you can type several tasks and
+[51:22] then when you when you're prompted to do
+[51:24] it, you can go to task commands and see
+[51:27] that each of sub agents executes like
+[51:30] different tasks. But the prompt must be
+[51:32] adjusted so that the task can happen
+[51:35] parallel, not like subsequent. So it
+[51:38] also decides whether it actually makes
+[51:40] sense to use sub agents or not. Yeah, I
+[51:42] think there's a couple of things going
+[51:43] on. You can definitely use the fleet
+[51:45] thing to kind of like be more
+[51:46] intentional about it. Um, the other
+[51:48] thing that I did like this also like you
+[51:51] can even see the little notice down
+[51:53] there like, hey, new version available.
+[51:54] I feel there's like at least daily,
+[51:56] sometimes multiple times a day an update
+[51:58] for GitHub copilot CLI. Um, so things
+[52:02] got added recently. Uh but one of the
+[52:05] things that will also work um what I do
+[52:08] a lot is like hey um
+[52:12] I guess I'm just now realizing that it's
+[52:15] a little bit of a different thing u but
+[52:17] where I will be like especially for like
+[52:18] reviewing a a piece of code or an idea
+[52:21] or whatever hey do a multimodel review
+[52:24] um and maybe then depending on what it
+[52:26] is also multiple personas so then it
+[52:28] will kind of like figure out like hey
+[52:30] okay I'm going to pull some GPT model U
+[52:33] Gemini I uh Claude like it will get a
+[52:36] bunch of models together because they
+[52:38] each have kind of like their own
+[52:39] characteristics and review it from
+[52:41] different angles and then if you mix in
+[52:42] kind of like the personas if you look at
+[52:44] like an app you can have like the
+[52:46] designer
+[52:48] >> you might want to resteer it Jacob sorry
+[52:50] I don't mean this
+[52:52] >> because it's it feels like it's stuck
+[52:55] thinking it's building but it's not
+[52:57] building.
+[52:58] >> Yeah. Um, so you might you might just
+[53:00] give it a quick note to say it's uh
+[53:03] please
+[53:04] >> what's up
+[53:04] >> rethink what you're doing or what's up
+[53:06] just to pro because yeah it said it's
+[53:08] still building after five minutes which
+[53:10] doesn't make sense. It should only be
+[53:11] like 30 seconds. So um I would Yeah. All
+[53:15] right.
+[53:16] >> Yeah. No, just to finish my thought
+[53:17] here, like the the the multiple persona
+[53:20] thing is also interesting like hey you
+[53:21] you can have like your UX expert or your
+[53:24] security expert or your I don't know
+[53:26] Maui expert that looks at it from
+[53:28] different angles and come up with like
+[53:29] hey oh this doesn't look quite right or
+[53:31] did you think about that or whatever.
+[53:33] Um, but going back to kind of like uh
+[53:35] multiple agents, what I do notice um and
+[53:37] I'm not sure what that kind of like
+[53:39] depends on um is u that for some tasks
+[53:43] if I give it like a bigger thing it will
+[53:45] break it up into multiple tasks and if
+[53:47] it are kind of like more read only maybe
+[53:49] tasks or whatever or things that it
+[53:52] figures out that it can do it in
+[53:53] parallel it will actually spin up
+[53:55] multiple agents to do things like in the
+[53:57] same time to speed things up. Um, but
+[53:59] yeah, you now also have kind of like the
+[54:01] fleet command to kind of like do that
+[54:03] more intentional where you're like,
+[54:04] "Hey, I know this is something that can
+[54:06] be done in parallel, so just fire off a
+[54:08] bunch of agents." And then of course you
+[54:09] have like the whole um squads concept,
+[54:13] right? Uh Brady Gastra and I'm sure
+[54:15] there's different variations of that um
+[54:18] where you have like a whole squad with
+[54:20] kind of like a personas built in that I
+[54:21] just mentioned uh that will go out and
+[54:23] do things and bring you all the um um
+[54:26] results as well. So bunch of options
+[54:29] there. Uh you definitely can do it. Uh
+[54:31] you can do it intentionally. It will do
+[54:32] it automatically to be a little bit more
+[54:34] efficient. But um yeah, all of that is
+[54:36] there.
+[54:41] Cool. Hopefully it detected that that
+[54:43] one built.
+[54:44] >> Yeah.
+[54:46] >> Yeah. Usually in these beginning steps
+[54:48] there'll be a little bit more focus.
+[54:50] It's it's so that we can kind of make
+[54:52] sure it's steering right. I mean, this
+[54:54] is kind of like David had sort of said
+[54:56] somewhere in the chat.
+[54:59] Oh, yeah. How do we feel about speck and
+[55:00] steer? Speck and steer. Yeah. I mean, I
+[55:03] think that's a good accurate way to
+[55:04] phrase it is speck and steer because
+[55:06] like whenever I'm initially working on a
+[55:08] problem like this, it is it is that sort
+[55:10] of back and forth process of like I have
+[55:14] that initial spec like Jacob had and
+[55:16] then I watch it to get an idea of what
+[55:19] it's doing and then um as I see what
+[55:23] it's doing, I I steer it. I mean, that's
+[55:25] why the steering messages are cool,
+[55:27] right? Because while it's working, I can
+[55:29] see what it's doing. I'm like, "Oh,
+[55:31] you're inspecting DLS. Don't inspect
+[55:32] DLS. Please add something to your
+[55:35] instructions to not do this. Oh, I see
+[55:36] you're doing this DevFlow thing. Don't
+[55:38] do this on the DevFlow thing. Do this
+[55:40] other thing."
+[55:41] >> Um, so it's like it's it's and I think
+[55:44] that goes back to like what Gerald said
+[55:45] too, right? Like I think there is this
+[55:48] there's a little bit of a too much of a
+[55:50] like, oh, it's such a magic, you know,
+[55:52] it's so magical type thing. Like just do
+[55:54] it once and you know, don't do anything.
+[55:55] And I realize we joke about doing that
+[55:57] ourselves, but you know, a lot of times
+[56:00] it's there's been a lot of effort going
+[56:02] into the spec part. Um, because like
+[56:05] even if you on Maui, all the all the
+[56:07] agent stuff we're using to do the PR
+[56:09] reviews, um, like that was like two
+[56:12] months of work from, you know, me and
+[56:14] Jacob and a couple other people to write
+[56:16] the correct specs in a way that the AI
+[56:20] could be successful. You know, that
+[56:21] wasn't just us throwing AI to say, "Hey,
+[56:23] go review PRs." like it was a pretty big
+[56:26] effort
+[56:27] >> to get it to work.
+[56:28] >> And the and like even if you look at our
+[56:31] PRs, there's a dip for a little bit and
+[56:33] then in the past two months we've merged
+[56:35] like 400 PRs. We went down from 700 PRs
+[56:38] to 300 PRs. So there's still a there's
+[56:43] still an investment you need to make
+[56:45] early on
+[56:47] to make sure that you're going to see
+[56:49] the benefits from using AI. Um, and I
+[56:52] think that's I think people sometimes
+[56:54] expect it's going to work too well in
+[56:56] the beginning and then they're kind of
+[56:56] like, "Oh, AI sucks. It's stupid."
+[56:58] >> Yeah. But, you know,
+[56:59] >> that's what whenever I talk to people
+[57:01] about this as well, it's like, "Hey, it
+[57:03] took us months to get the Maui
+[57:05] repository up to a point where we raised
+[57:08] Copilot enough that we could trust it to
+[57:10] do reviews, to, you know, do all the
+[57:12] things that we're doing with it right
+[57:13] now. So you're going to have to augment
+[57:15] your whole repository, your codebase,
+[57:17] your tooling or whatever to get up to a
+[57:19] point where you know um you are
+[57:21] confident enough that the output that
+[57:24] comes from uh your code pilot from your
+[57:25] AI u is not hallucinating is indeed
+[57:28] producing like high quality stuff etc
+[57:30] etc.
+[57:32] [snorts]
+[57:32] >> Yeah. Yeah. So that's always good. This
+[57:35] thing seems
+[57:38] super confused about the
+[57:40] >> Yeah. This is one of those I know this
+[57:43] is one of those I I think AI is aware of
+[57:48] when it's streaming and
+[57:50] >> well we turn on streamer mode so you
+[57:52] know
+[57:52] >> Yeah because I mean like you did this
+[57:54] yesterday Jacob and you said what it
+[57:56] wrote the whole app in like 10 minutes
+[57:59] >> I think you had said or like 10 or 15
+[58:01] and got it
+[58:02] >> yeah like it seems
+[58:03] >> again this point of
+[58:06] >> yeah I mean this is these are those
+[58:07] points sometimes you're you're you're
+[58:09] you know I mean you gota Even think of
+[58:11] it like hiring a new developer. You
+[58:12] know, sometimes you show up and they're
+[58:14] just they're just like running against
+[58:16] the wall over and over again. You're
+[58:17] like, "You got to stop doing that. You
+[58:18] got to go.
+[58:19] >> Have you tried that? You're fired. Give
+[58:20] me a new agent." [laughter]
+[58:22] >> I mean, that sometimes works. So, it's
+[58:24] Yeah, I feel like it's super confused
+[58:26] about um
+[58:29] the building unfortunately um is is
+[58:33] where it got her up here if I'm
+[58:35] understanding what I'm seeing here. Uh
+[58:37] so, I don't know. You could try steering
+[58:39] it real quick, Jacob. I realize we only
+[58:41] have
+[58:42] >> uh we have to cut out here in a sec.
+[58:45] >> We can we can go a little bit over.
+[58:46] That's fine.
+[58:47] >> Okay. I mean, because you could even
+[58:48] emphasize here and just be like, why?
+[58:50] Like, please like like this is sometimes
+[58:53] when I'll tell it to think deeper. So,
+[58:54] I'll say something like um uh building
+[58:58] this app is super simple. You just use
+[59:00] net build and it runs. I've seen it
+[59:02] work. For some reason, you're getting
+[59:03] super confused. Please think really hard
+[59:06] about where you're getting confused and
+[59:09] adjust what you're doing. Um,
+[59:13] yeah. So, I mean, a lot of this does
+[59:14] just come down about you learning how to
+[59:17] shape it. Um, and it does feel weird
+[59:21] like sometimes you just feel so silly, I
+[59:23] think, sometimes [clears throat] writing
+[59:25] these code to these agents and stuff,
+[59:26] but it's just it's you just get so much
+[59:28] velocity once you know how um to use
+[59:33] these things. So um
+[59:37] yeah, once you sort of steer the stuff.
+[59:41] Yeah. So it's it's uh
+[59:44] which makes it Yeah. I mean this is the
+[59:47] this is actually I think some of the
+[59:48] stuff that Peppers has simplified if I'm
+[59:50] following what's going a little bit ary
+[59:52] here. So we did add some stuff into .NET
+[59:55] where it's more friendly to run like
+[59:57] .NET run um and things like that to get
+[60:02] log files. So this is this is something
+[60:05] that we were having issues with as well.
+[60:07] And so uh it's in net I think it's going
+[60:09] to be in one of the net 10 previews and
+[60:11] net 11. And that's going to help out the
+[60:13] um the build loop here. Be more
+[60:16] deterministic especially with launch.
+[60:18] >> Okay. Because like look, it looks like
+[60:20] it's even using M launch to install it
+[60:23] which is um
+[60:24] >> yeah it probably got sidetracked and
+[60:28] >> Yeah. Oh, but hey there we got tabs. We
+[60:30] actually have something interesting. Hey
+[60:33] >> and we uh we had even logo.
+[60:37] >> Yeah. Yeah. And the these stages I think
+[60:40] are always interesting to see too
+[60:41] because a lot of the AI we have has been
+[60:44] sort of speced to the point where we
+[60:46] have enough skills and instructions that
+[60:48] this stuff does well. So I I honestly
+[60:52] don't even a lot of times have an idea
+[60:53] how long our AI works because I'll just
+[60:55] have like five or
+[60:57] >> phase two is usually confirmed blah blah
+[60:58] blah. This is coming in phase 10. Oh my
+[61:00] goodness. We're gonna be a while.
+[61:03] >> Oh that's funny that I would find in
+[61:04] phase 10. Yeah,
+[61:10] stage two deploy to verified. Hey. Okay.
+[61:12] Well, at least we got something with
+[61:13] tabs and it's running through it. Okay.
+[61:15] See, build problem solved and noted.
+[61:17] See, now it noted. So, this is this is
+[61:19] an really important loop to sort of
+[61:21] annot to to um look into because so it
+[61:25] solved the problem and it noted it in
+[61:28] the plan MD. And so that's what's really
+[61:30] important here is because like now in
+[61:33] theory, if we're building an actual app,
+[61:36] AI won't get lost again like this. So
+[61:39] now we've we've we've spec and improved
+[61:42] it to be better this next time. So this
+[61:44] whole flow will only take like two
+[61:46] minutes. So these are the type of things
+[61:48] you're just going to keep running into
+[61:50] using AI where it's gonna get lost on
+[61:52] weird stuff and then you just improve
+[61:55] your instructions and iterate. Um,
+[61:58] so I mean it's at the point now with
+[62:00] Maui where like I've I've had I can go
+[62:03] scenarios where it's like, "Hey, this
+[62:04] bug regressed and I will just go to
+[62:06] copilot and I will say this bug
+[62:08] regressed somewhere between these two
+[62:10] commits. Please find it." And it'll
+[62:12] basically just it'll go through and do a
+[62:15] whole bisect on the entire commit tree
+[62:17] down to find the commit and run the app
+[62:20] and test it with our UI test through the
+[62:22] entire thing. um because we've done the
+[62:25] sort of speck and um steer and um
+[62:32] you know improve iterations. So
+[62:39] yeah, so that's that's kind of the the
+[62:41] direction and so now we can see it's
+[62:42] it's chugging. So yeah, it's always
+[62:46] frustrating to start with on AI,
+[62:48] especially a new project until you get
+[62:50] to it until you get it taught. But
+[62:52] that's what all this stuff is for.
+[62:53] That's what Maui Devlow is for. That's
+[62:55] what the skills are for. That's what the
+[62:57] CLI is for. That's what the netnet
+[63:00] commands that peppers addit is for. So
+[63:02] like it's it's it's very much something
+[63:05] we're using and and fixing. Um
+[63:09] yeah. I don't know. Were there any other
+[63:10] questions or things that we missed? I'm
+[63:14] excited we actually have something to
+[63:15] show with tabs. [laughter]
+[63:17] >> Yeah, screenshots are awesome.
+[63:21] I was really
+[63:22] >> cheaper. Yeah. Oh, sorry. Go.
+[63:28] >> Let's see. Is there any skills for Maui
+[63:30] hybrid splash screens? I don't know if
+[63:32] anyone had comments on that one. I saw
+[63:34] someone asked.
+[63:35] >> I'm not sure if very specific to splash
+[63:37] screens. I do know. I think there's also
+[63:40] actually Maui deflow stuff for um
+[63:44] uh hybrid hybrid apps. So the the blazer
+[63:46] hybrid apps um so that it can inspect
+[63:48] that as well. So that should be covered
+[63:50] by all of that. Um I think this person
+[63:53] was asking also a little bit about um
+[63:55] the performance there starter
+[63:57] performance. I think uh Shiman on our
+[64:00] team has been doing a lot of work on the
+[64:04] um Maui Devflow uh sorry the Maui labs
+[64:07] repository as well um to add some uh
+[64:12] Maui CLI commands for like startup uh
+[64:15] profiling and that kind of stuff and
+[64:17] profiling in general. So that might be
+[64:19] interesting for you. And then of course
+[64:20] the AI skills etc etc that come with
+[64:22] that. Um so that you can do like Maui I
+[64:26] don't I don't I don't remember the
+[64:27] command so I shouldn't start doing
+[64:29] things here. Go to Maui labs. It I think
+[64:32] we just merged it. It should be part at
+[64:34] least the first bits of the uh new Maui
+[64:37] C live version that is out right now on
+[64:39] Nugat. Um, so you can start looking into
+[64:42] that and see kind of like where um your
+[64:45] app is spending a lot of time and what
+[64:47] you um might be able to optimize there.
+[64:51] Uh, otherwise like you know these things
+[64:54] actually here look look sorry to
+[64:56] interrupt myself. Rubber duck is also a
+[64:59] feature that was added at some point. I
+[65:01] think you can do slberduck or whatever.
+[65:03] Um, now it's invoking it itself to kind
+[65:06] of like talk to itself.
+[65:08] rubber duck debugging talk to your
+[65:10] rubber duck to kind of like come to a
+[65:12] new realization of like hey what's
+[65:14] happening here um what should I do here
+[65:16] etc etc um so it's actually doing that
+[65:19] itself to kind of like hey uh what it is
+[65:21] is trying to figure out the units and
+[65:23] behavior of label character spacing um
+[65:26] then it's going to do some searches on
+[65:28] the interwebs uh to figure out what that
+[65:30] actually is so um there's some stuff
+[65:32] going on there so yeah um I don't think
+[65:35] like the the splash screens on um a
+[65:38] Blazer hybrid application is like super
+[65:40] specific scenario. I'm not sure if we
+[65:43] have something that specific at this
+[65:44] point in time at least. Um but um there
+[65:47] is definitely tools and and stuff and
+[65:49] agent skills and whatever for u blazer
+[65:52] hybrid and then also for the profiling
+[65:55] stuff because you know performance is
+[65:56] definitely also top of mind for us
+[65:58] always as well. So
+[66:00] >> if if there is no such skill, you can
+[66:03] actually prompt your copilot and maybe
+[66:06] contribute to to the
+[66:07] >> Yeah, absolutely. That's Yep.
+[66:17] Uh one other thing that's kind of like
+[66:19] interesting here. Sorry this is hiding
+[66:20] you because this uh comment is too
+[66:23] large, Shane. I'm sorry. Uh, now that
+[66:25] you have evolved the Maui team skills
+[66:27] agents to a point where the AI is
+[66:29] working and valuable, do you have evals
+[66:32] for them or is that overkill? I'm trying
+[66:33] to figure that out for my workflow as
+[66:35] well. Uh, I know that we are looking
+[66:38] into that chain. [laughter]
+[66:41] Um, we we are doing that, right?
+[66:44] >> We do have evas of skills even on in our
+[66:49] you can shine expand on this.
+[66:52] >> Yeah. the uh it's the skill validator
+[66:55] stuff from net skills,
+[66:58] >> right?
+[66:58] >> Um
+[67:00] >> and so yeah, I mean we basically just
+[67:02] use it has a skill there's a skill on
+[67:06] there called sort of like eval what it's
+[67:08] called. It's called eval creator or
+[67:09] something like that. Um and then you can
+[67:12] use that to sort of test some of your uh
+[67:16] basic scenarios. Um
+[67:20] create is it create skill? I think maybe
+[67:22] in this create skill markdown they have
+[67:24] the eval. Uh but I mean yeah I wouldn't
+[67:27] get too bogged down in some of those
+[67:30] things but the um it is useful for maybe
+[67:33] if you're once you start getting to
+[67:34] larger skills that are doing sort of
+[67:36] pretty um intense things. Uh it helps
+[67:41] sort of keep your things oriented
+[67:43] because it is just because AI is always
+[67:45] so somewhat non-deterministic. you know,
+[67:48] sometimes you don't know what type of
+[67:50] changes are going to affect the skill.
+[67:52] Um, so yeah, so those eval are useful.
+[67:55] Uh, it's it's those eval are useful just
+[67:58] to make sure you're not sort of
+[68:01] venturing too far from um when when
+[68:04] you're sort of making the changes. Uh so
+[68:07] yeah, if you have a skill, you can
+[68:09] basically just point it to the dotset
+[68:11] skills repository. You can say, hey, I
+[68:13] want to use netskills
+[68:16] evaluator. please evaluate my skill and
+[68:19] it'll, you know,
+[68:22] do the process of of setting that up.
+[68:24] Um, yep. Yeah, I feel they actually have
+[68:26] like a Nougat or something to help with
+[68:28] that. I don't know. I I set it up for
+[68:30] the Maui Labs repository as well. Uh,
+[68:33] but yeah, again, like, you know, you can
+[68:35] point your co-pilot to be like, "Hey, I
+[68:37] want to evaluate my skills and my
+[68:39] things. Here is a repository that
+[68:41] already does it. Figure out how to do it
+[68:43] and use that for inspiration, right?" Um
+[68:46] and then you know you'll you'll have
+[68:48] something that uh will work for your um
+[68:52] um project and skills and agents and
+[68:54] stuff as well because that's definitely
+[68:55] also part of like this whole thing again
+[68:58] validation uh keeping keeping it with
+[69:00] the program uh so that it doesn't start
+[69:03] hallucinating or even just making sure
+[69:05] that your skills are kind of like
+[69:06] efficient and being invoked right like
+[69:08] that it's that it's actually uh doing
+[69:10] the thing that um you set out to do.
+[69:15] Not a question, but awesome. Thank you
+[69:17] so much. Appreciate all the work the
+[69:19] team has done with Maui. Much
+[69:21] appreciated. Well, thank you so much,
+[69:23] Entremo 355. We appreciate you as well.
+[69:29] Um, there is one other one here
+[69:34] and one customizer prompt to ask the
+[69:36] Copa to add AI capabilities enhancement
+[69:38] you've never specified and grill you
+[69:40] with questions for Absolutely. That's
+[69:42] the thing. That's what we that's what I
+[69:44] kind of like hinted at just now as well
+[69:46] with like hey if you want something to
+[69:48] evaluate your skills ask co-pilot if you
+[69:51] want to know why it's hanging right here
+[69:53] trying to figure out a build as co-pilot
+[69:55] what are you doing you seem to be
+[69:57] hanging what is there you can do it's so
+[69:59] easy to kind of like forget that you can
+[70:00] just ask it what it's doing right and
+[70:02] how to do it better and what you can do
+[70:04] to kind of like help it um so with this
+[70:06] as well can one customize a problem to
+[70:08] ask the copa to add AI capabilities
+[70:10] enhancements you've never specified um
+[70:12] I'm Not sure what that means. My
+[70:14] interpretation is that you want to have
+[70:16] a Maui verse app that is AI enabled so
+[70:19] that you have like a little um floating
+[70:21] action button with sparkles on it
+[70:24] because sparkles is the um universe
+[70:27] universal universe and universal uh sign
+[70:30] for AI these days. Um and that you can
+[70:34] magically through AI search through all
+[70:36] the content to find the thing that you
+[70:37] need. Uh something like that, right?
+[70:39] that you can add AI capabilities to your
+[70:41] application. Um, yes, absolutely right.
+[70:44] I do that all the time. Use it as that
+[70:46] rubber duck. Hey, what are functional
+[70:49] more than one times when I was working
+[70:51] on an app, it would come up with ideas
+[70:53] um back to, you know, I don't know when
+[70:55] you joined us, but uh back to my
+[70:56] conference app. So, this is kind of like
+[70:58] whenever you go to an in-person event,
+[71:00] you will have an overview of um um the
+[71:04] sessions that are going to be there, the
+[71:05] speakers that are going to be there. But
+[71:07] of course like there's all kinds of
+[71:09] points in time where you can open the
+[71:12] app and do things. So
+[71:15] it came up with the idea and I thought
+[71:16] it was brilliant to kind of like um hey
+[71:18] whenever you open the app right now it's
+[71:22] before the event you open the app right
+[71:23] now and it will show hey so many days
+[71:25] until the event. Okay that's nice but
+[71:27] then what's kind of like the action that
+[71:29] I'm going that I'm likely to kind of
+[71:31] like take at this point in time I'm
+[71:33] going to try uh and figure out my
+[71:35] schedule. Right? So you can create your
+[71:37] own customized schedule for hey these
+[71:39] are the things that I want to see. Okay,
+[71:40] that's one. The other thing that's
+[71:42] important at this point in time is where
+[71:44] is it? How am I going to get there? So
+[71:46] it shows the location details like on
+[71:48] the dashboard so that you can tap on it.
+[71:50] It will open your navigation app and you
+[71:52] can navigate to it, right? Because
+[71:53] that's the thing that I want to know
+[71:54] because I'm not there yet. Then at the
+[71:56] day itself, it will show me, hey, that
+[71:58] dashboard completely changed. It will
+[72:00] show me an overview of like the sessions
+[72:02] that are going on right now when I open
+[72:04] the app. So these are live right now um
+[72:07] in all of these tracks but it will show
+[72:09] me the first one if it's like the
+[72:10] session that is in my personal schedule
+[72:12] and then underneath that with like hey
+[72:14] this is coming up in the next slot or um
+[72:16] this is what's coming for the whole day
+[72:18] for you for your so there's kind of like
+[72:20] and then whenever um kind of like the
+[72:22] day is over it's like oh the event is
+[72:24] over thank you so much for joining u
+[72:26] please leave your reviews here whatever
+[72:27] and then you have something actionable
+[72:29] there as well right so it came up with a
+[72:30] couple of those ideas itself that was
+[72:33] like wow that's pretty Cool, right? Like
+[72:35] I didn't think about that, but this is
+[72:37] very useful. Now go build it for me. Um,
+[72:39] and it did and I I'm pretty happy with
+[72:41] how it turned out. So yeah, just coming
+[72:44] back to this question, you can
+[72:45] absolutely not just for AI things, but
+[72:47] just have it go through your app and be
+[72:49] like, what are the things that I can Oh
+[72:51] my goodness. Oh my good. Look at that.
+[72:55] >> Woohoo. Coming up. It looks amazing. Um,
+[72:58] but have it review your app and
+[73:01] definitely you can just say sorry to
+[73:02] just to finish my thought like
+[73:03] [laughter] hey while you're doing this
+[73:06] um ask me questions to gather
+[73:08] information um on things you're not sure
+[73:10] about. So all things that you can ask
+[73:12] and it will do it. Okay, Jacob go. What
+[73:14] are we seeing here?
+[73:15] >> Yay. I've just I've been waiting a
+[73:19] breath [laughter]
+[73:22] >> like when it actually gets like your
+[73:25] beautiful face for example here with
+[73:28] real real data or David's new profile
+[73:31] picture here.
+[73:33] >> It's it's going to scroll. So don't
+[73:35] scroll. Let's see if it scrolls itself
+[73:37] here with the dev flow.
+[73:39] >> Yeah,
+[73:40] >> he do is even after this stream I will
+[73:42] keep keep it on uh doing its work. It
+[73:45] will probably end in like three hours,
+[73:48] but hopefully it will and we will show
+[73:50] you the results and maybe Gerard told
+[73:54] that maybe when it's good enough, we'll
+[73:56] maybe publish it to
+[73:57] >> Yeah, absolutely.
+[73:58] >> Oh, look at that. It scrolled it. Did
+[74:00] you see that? Was
+[74:02] >> that wasn't you, Jacob? You didn't like
+[74:03] secretly scroll it. We're now
+[74:06] >> hands up. [laughter]
+[74:09] >> Yeah. And like that's the neat thing is
+[74:11] that the Maui dev flow like it's working
+[74:12] against like the Maui tree to sort of
+[74:15] perform a lot of these operations and
+[74:17] stuff. So um yeah, see now it's it's
+[74:19] able to verify it. Um yeah, and that's
+[74:23] like the that's the fun thing when you
+[74:24] get the dev flow stuff wired up because
+[74:26] you're like you know this looks bad, use
+[74:29] that flow to fix it and it'll screenshot
+[74:32] get to it fix and stuff. So yeah,
+[74:36] >> actually what
+[74:38] what are you gonna do? Yeah, real data.
+[74:40] Okay, because it kind of like paused
+[74:42] here for like, hey, should I do phase
+[74:43] four? So maybe this is a natural pause
+[74:47] um
+[74:48] >> uh to kind of like end here and maybe
+[74:51] >> do we have I'm gonna let's start right
+[74:54] now.
+[74:55] >> Yeah, I think
+[74:55] >> maybe we can do it again next week. And
+[74:57] >> we actually got a screen so I'm pretty
+[75:00] excited. Um,
+[75:02] >> yeah. And it looks good. Very good,
+[75:04] honestly.
+[75:05] >> Yeah. Yeah, it looks good. And it's it's
+[75:07] it's Yeah. I think sometimes you have to
+[75:10] measure
+[75:11] what you would have taken to accomp
+[75:13] because I know sometimes when I'm
+[75:14] working with co-pilot, it'll feel like,
+[75:16] oh man, it's being so incompetent and
+[75:18] then I finally get to a solution and
+[75:20] you're sort of frustrated, but then I
+[75:22] think back to like the past and like,
+[75:25] you know, it would have taken me like
+[75:27] two weeks to do something Yeah.
+[75:29] >> myself in a focused way. And it would
+[75:32] not it would not look like this.
+[75:33] [laughter]
+[75:34] >> Yeah. Whereas now I can spend a I can
+[75:36] spend a couple hours, you know, telling
+[75:38] Copilot to stop being dumb and then
+[75:41] eventually get that baseline now that I
+[75:44] can really start working on. And so
+[75:47] >> and and it will take you to what
+[75:49] somebody who has never used Maui before.
+[75:52] It would
+[75:52] >> Yeah.
+[75:54] All right. I see people in the chat.
+[75:55] This session needs a part two. Uh let's
+[75:59] I think like next week I think I will be
+[76:01] available. So let's just pause here.
+[76:03] We'll see if we can make this a weekly
+[76:05] recurring thing. Just keep building on
+[76:07] this app because this is going pretty
+[76:08] well. Uh then we'll show you how to
+[76:10] resume sessions. So that will be great
+[76:12] too. Um one thing one quick note Shane
+[76:15] for you to put in your to-do list
+[76:16] because you're a safe area now
+[76:18] [laughter] safe safe area person. Um
+[76:20] what you will notice I think also in
+[76:22] this app and that's something that my
+[76:23] co-pilot was struggling with a little
+[76:25] bit. It doesn't go under the tap bar,
+[76:27] right? Especially with the liquid glass.
+[76:29] That's what you want. It doesn't go
+[76:30] under, right? It cuts off above there.
+[76:33] Um, so I don't know why that is. I don't
+[76:35] I don't even know if it's like the safe
+[76:36] area things here to begin with. But
+[76:38] let's make a collective little note here
+[76:40] that we should look into that.
+[76:42] >> Yeah, but also it's cool that the
+[76:44] background extends across the safe area.
+[76:47] >> Yeah,
+[76:47] >> it does do the safe area at the top at
+[76:49] least very well. So that's very cool.
+[76:52] All right, thank you so much everyone
+[76:54] for watching. Um, I think this will get
+[76:56] a follow-up. Enjoy the rest of your May
+[76:59] 1st. Thank you so much for um joining us
+[77:01] here. All the lovely questions in the
+[77:04] chat. Bring them for the next time. Keep
+[77:06] your eye on this channel um channels.
+[77:08] Actually, we're on Facebook, YouTube,
+[77:10] Twitch, X. So, um find us all there.
+[77:13] Like and subscribe and all the things.
+[77:15] And um be sure to check out all of our
+[77:17] socials for an announcement of the next
+[77:20] instance. and we will be taking this
+[77:22] Maui verse app further. Thank you so
+[77:24] much Shane. Thank you so much Jacob. See
+[77:26] you for the next one. Have a good
+[77:27] weekend everyone.
+[77:28] >> See you later. Byebye.
+[77:59] Hey,
+[78:06] hey, hey.
+[78:10] Heat. Heat. N.
+[78:20] Heat. Heat.
+[78:36] [music]
+[78:47] Heat. Heat.
+[79:23] Heat. Heat. [music]
+[79:47] Heat. Heat.

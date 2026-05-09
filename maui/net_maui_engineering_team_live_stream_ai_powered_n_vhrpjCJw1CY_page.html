@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PodSlacker — .NET MAUI Engineering Team Live Stream: AI-Powered .NET MAUI Development with MauiDevFlow</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:      #0d1117;
+  --surface: #161b22;
+  --border:  #30363d;
+  --accent:  #58a6ff;
+  --text:    #e6edf3;
+  --muted:   #8b949e;
+  --code-bg: #1e2433;
+  --radius:  10px;
+  --ph:      72px;
+}
+html { scroll-behavior: smooth; }
+.ps-cta-bar {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  background: linear-gradient(90deg, #0d1f3c 0%, #111827 100%);
+  border-bottom: 1px solid rgba(88,166,255,.25);
+  padding: 10px 24px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+.ps-cta-logo {
+  width: 32px; height: 32px; object-fit: contain; border-radius: 50%;
+  flex-shrink: 0;
+}
+.ps-cta-bar span { flex: 1; }
+.ps-cta-bar strong { color: var(--text); }
+.ps-cta-btn {
+  display: inline-block; padding: 6px 16px; white-space: nowrap;
+  background: rgba(88,166,255,.12);
+  color: var(--accent);
+  border: 1px solid rgba(88,166,255,.35);
+  border-radius: 20px;
+  font-size: 0.82rem; font-weight: 600;
+  text-decoration: none;
+  transition: background .2s;
+}
+.ps-cta-btn:hover { background: rgba(88,166,255,.24); }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+body.has-player { padding-bottom: calc(var(--ph) + 8px); }
+.page-header {
+  background: linear-gradient(135deg, #1a1f35 0%, #0d1117 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 36px 24px;
+  text-align: center;
+}
+.page-header h1 { font-size: clamp(1.4rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; }
+.vid-badge { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: var(--muted); font-family: "SF Mono", Consolas, monospace; }
+.vid-badge a { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; }
+.vid-badge a:hover { opacity: .8; }
+.source-link { display: inline-block; margin-top: 14px; padding: 6px 16px; background: rgba(88,166,255,.1); color: var(--accent); border: 1px solid rgba(88,166,255,.3); border-radius: 20px; font-size: 0.84rem; text-decoration: none; transition: background .2s; }
+.source-link:hover { background: rgba(88,166,255,.2); }
+.content { max-width: 860px; margin: 0 auto; padding: 32px 24px; }
+.section { margin-bottom: 48px; }
+.section-heading { font-size: 0.75rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.prose h1, .prose h2, .prose h3, .prose h4 { font-weight: 600; line-height: 1.3; margin: 1.5em 0 .5em; color: var(--text); }
+.prose h1 { font-size: 1.7rem; }
+.prose h2 { font-size: 1.3rem; color: var(--accent); }
+.prose h3 { font-size: 1.1rem; }
+.prose p { margin-bottom: 1em; }
+.prose ul, .prose ol { padding-left: 1.6em; margin-bottom: 1em; }
+.prose li { margin-bottom: .3em; }
+.prose strong { font-weight: 600; }
+.prose code { font-family: "SF Mono", Consolas, monospace; font-size: .875em; background: var(--code-bg); padding: .15em .4em; border-radius: 4px; color: #79c0ff; }
+.prose pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; overflow-x: auto; margin-bottom: 1em; }
+.prose pre code { background: none; padding: 0; }
+.prose blockquote { border-left: 3px solid var(--accent); padding: 8px 16px; margin: 0 0 1em; color: var(--muted); background: rgba(88,166,255,.06); border-radius: 0 4px 4px 0; }
+.prose table { width: 100%; border-collapse: collapse; margin-bottom: 1em; font-size: .9em; }
+.prose th, .prose td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+.prose th { background: var(--surface); font-weight: 600; }
+.prose tr:nth-child(even) { background: rgba(255,255,255,.02); }
+.prose a { color: var(--accent); text-decoration: none; }
+.prose a:hover { text-decoration: underline; }
+.prose hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+.md-fallback { white-space: pre-wrap; font-size: .88em; color: var(--muted); }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.gal-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color .2s, transform .2s; }
+.gal-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.gal-item img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; cursor: zoom-in; }
+.gal-caption { padding: 8px 10px; font-size: .8rem; color: var(--muted); line-height: 1.45; }
+.transcript-details { margin-top: 8px; }
+.transcript-summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; padding: 8px 0; list-style: none; user-select: none; }
+.transcript-summary::-webkit-details-marker { display: none; }
+.transcript-summary::marker { display: none; }
+.transcript-summary::before { content: "▶ "; font-size: .7em; }
+details[open] .transcript-summary::before { content: "▼ "; }
+.transcript-body { margin-top: 12px; display: flex; flex-direction: column; gap: 3px; max-height: 420px; overflow-y: auto; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.ts-line { font-size: .875rem; line-height: 1.55; color: var(--text); }
+.ts-link { color: var(--accent); text-decoration: none; font-family: "SF Mono", Consolas, monospace; font-size: .8rem; }
+.ts-link:hover { text-decoration: underline; }
+.transcript-download-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; background: rgba(88,166,255,.08); color: var(--accent); border: 1px solid rgba(88,166,255,.25); border-radius: 20px; font-size: 0.88rem; text-decoration: none; transition: background .2s; }
+.transcript-download-link:hover { background: rgba(88,166,255,.2); }
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.88); z-index: 2000; align-items: center; justify-content: center; cursor: zoom-out; }
+.lightbox.open { display: flex; }
+.lightbox-content { display: flex; flex-direction: column; align-items: center; gap: 12px; cursor: default; max-width: 92vw; }
+.lightbox-content img { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: var(--radius); box-shadow: 0 8px 48px rgba(0,0,0,.7); }
+.lightbox-caption { color: #cdd5e0; font-size: .88rem; line-height: 1.5; text-align: center; max-width: 700px; min-height: 1.2em; }
+.lightbox-close { position: absolute; top: 16px; right: 20px; font-size: 2rem; color: #fff; cursor: pointer; line-height: 1; opacity: .7; transition: opacity .15s; }
+.lightbox-close:hover { opacity: 1; }
+.player { position: fixed; bottom: 0; left: 0; right: 0; height: var(--ph); background: rgba(13,17,23,.93); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid var(--border); z-index: 1000; }
+.player-inner { max-width: 860px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 14px; padding: 0 24px; }
+.play-btn { flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #0d1117; transition: background .15s, transform .1s; }
+.play-btn:hover { background: #79bbff; }
+.play-btn:active { transform: scale(.94); }
+.track-meta { flex-shrink: 0; max-width: 200px; overflow: hidden; }
+.track-name { font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: "SF Mono", Consolas, monospace; }
+.seek-wrap { flex: 1; display: flex; align-items: center; gap: 10px; }
+.time-lbl { font-size: .76rem; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 34px; font-family: "SF Mono", Consolas, monospace; }
+.seek-bar { flex: 1; -webkit-appearance: none; appearance: none; height: 4px; border-radius: 2px; background: var(--border); cursor: pointer; outline: none; }
+.seek-bar::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; transition: transform .1s; }
+.seek-bar:hover::-webkit-slider-thumb { transform: scale(1.3); }
+.seek-bar::-moz-range-thumb { width: 14px; height: 14px; border: none; border-radius: 50%; background: var(--accent); cursor: pointer; }
+@media (max-width: 600px) {
+  .track-meta { display: none; }
+  .page-header { padding: 20px 16px; }
+  .content { padding: 20px 16px; }
+}
+</style>
+</head>
+<body class="has-player">
+
+<div class="ps-cta-bar">
+  <img src="https://podslacker.com/logo.png" alt="PodSlacker" class="ps-cta-logo" onerror="this.style.display='none'" />
+  <span>This SlackCast was generated by <strong>PodSlacker</strong> &mdash; turn any YouTube video into a podcast.</span>
+  <a href="https://podslacker.com" target="_blank" rel="noopener" class="ps-cta-btn">Try PodSlacker now &#8599;</a>
+</div>
+
+<header class="page-header">
+  <h1>.NET MAUI Engineering Team Live Stream: AI-Powered .NET MAUI Development with MauiDevFlow</h1>
+  <div class="vid-badge">Created with <a href="https://podslacker.com" target="_blank" rel="noopener">PodSlacker</a> &nbsp;·&nbsp; vhrpjCJw1CY</div><br>
+  <a class="source-link" href="https://www.youtube.com/watch?v=vhrpjCJw1CY" target="_blank" rel="noopener">Watch on YouTube &#8599;</a>
+</header>
+
+<div class="content">
+
+<section class="section">
+<h2 class="section-heading">Key Moments</h2>
+<div class="gallery">
+<figure class="gal-item"><img src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_01.jpg" alt="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_01.jpg" loading="lazy" data-caption="Heat. Heat."><figcaption class="gal-caption">Heat. Heat.</figcaption></figure>
+<figure class="gal-item"><img src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_02.jpg" alt="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_02.jpg" loading="lazy" data-caption="Heat. Heat."><figcaption class="gal-caption">Heat. Heat.</figcaption></figure>
+<figure class="gal-item"><img src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_03.jpg" alt="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_03.jpg" loading="lazy" data-caption="Heat. Heat. Heat. Heat."><figcaption class="gal-caption">Heat. Heat. Heat. Heat.</figcaption></figure>
+<figure class="gal-item"><img src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_04.jpg" alt="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_04.jpg" loading="lazy" data-caption="Heat. Heat. Heat. Heat. Heat. N."><figcaption class="gal-caption">Heat. Heat. Heat. Heat. Heat. N.</figcaption></figure>
+<figure class="gal-item"><img src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_05.jpg" alt="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_05.jpg" loading="lazy" data-caption="Heat. Heat. Heat. Heat. N. Heat. Hey. Hey. Hey."><figcaption class="gal-caption">Heat. Heat. Heat. Heat. N. Heat. Hey. Hey. Hey.</figcaption></figure>
+<figure class="gal-item"><img src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_06.jpg" alt="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_frame_06.jpg" loading="lazy" data-caption="Heat. Heat. N. Heat. Hey. Hey. Hey. Heat. Heat."><figcaption class="gal-caption">Heat. Heat. N. Heat. Hey. Hey. Hey. Heat. Heat.</figcaption></figure>
+
+</div>
+</section>
+<section class="section">
+<h2 class="section-heading">Summary &amp; Script</h2>
+<div class="prose"><h1 id="net-maui-engineering-team-live-stream-ai-powered.net-maui-development-with-mauidevflow">.NET MAUI Engineering Team Live Stream: AI-Powered .NET MAUI Development with MauiDevFlow</h1>
+<p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=vhrpjCJw1CY">https://www.youtube.com/watch?v=vhrpjCJw1CY</a><br />
+<strong>Video ID:</strong> <code>vhrpjCJw1CY</code></p>
+<hr />
+<h1 id="youtube-video-summary-ai-powered.net-maui-development-with-copilot-cli">YouTube Video Summary: AI-Powered .NET MAUI Development with Copilot CLI</h1>
+<h2 id="overview">Overview</h2>
+<p>This video showcases how .NET MAUI developers can leverage AI, specifically the Copilot CLI and its &quot;YOLO mode,&quot; to accelerate the development of mobile applications. The presenters, members of the .NET MAUI team, demonstrate building a mobile companion app for the .NET MAUI community website, &quot;Maui Verse,&quot; using AI-powered tools. They discuss the evolving landscape of AI in development, the increasing adoption of AI-assisted code generation, and introduce a new tool called &quot;Dev Flow&quot; within the MAUI Labs repository.</p>
+<h2 id="major-sectionstopics-covered">Major Sections/Topics Covered</h2>
+<ul>
+<li><strong>Introduction and May 1st Greetings:</strong> The video begins with greetings and acknowledgments of May 1st, noting that some participants are taking a day off.</li>
+<li><strong>Previous Projects and Updates:</strong> A brief mention of a previously built conference app and upcoming discussions with a conference for its adoption.</li>
+<li><strong>Maui Day Event:</strong> Announcement of an upcoming .NET MAUI event in Krakow, Poland on May 29th.</li>
+<li><strong>Team Introductions:</strong> Introductions of Gerald, Jacob, and Shane from the .NET MAUI team.</li>
+<li><strong>AI in .NET MAUI Development:</strong>
+<ul>
+<li>Discussion and demonstration of &quot;vibe coding&quot; and the term &quot;agentic engineering&quot; for AI-assisted development.</li>
+<li>Presentation of the .NET MAUI PR dashboard, highlighting the increase in Copilot-authored and Copilot-reviewed pull requests.</li>
+<li>Mention of the recent release, MAUI SR6, which incorporated significant AI contributions.</li>
+<li>Emphasis on the goal of making developers more productive with AI tools.</li>
+</ul>
+</li>
+<li><strong>Live Coding Demonstration:</strong>
+<ul>
+<li><strong>Project Goal:</strong> To create a mobile version of the &quot;Maui Verse&quot; website.</li>
+<li><strong>Copilot CLI and YOLO Mode:</strong> Explanation of how to initiate Copilot CLI in &quot;YOLO mode&quot; for broader permissions, with a disclaimer about its usage.</li>
+<li><strong>Prompt Engineering:</strong> Jacob shares a pre-prepared prompt for Copilot, detailing the requirements for the MAUI Verse app, including the URL of the .NET MAUI docs, the usage of MAUI skills and Dev Flow, and instructions to avoid emojis and community toolkit.</li>
+<li><strong>AI in Development Philosophy:</strong> A discussion on the acceptance and benefits of using AI in development, emphasizing that the focus is on the outcome and verification rather than the generation method. The concept of &quot;team vibecoded&quot; is humorously introduced.</li>
+<li><strong>Agentic Review:</strong> The idea that AI agents will review PRs before human developers, leading to a new workflow where developers' attention is only required after AI &quot;agents are happy.&quot;</li>
+<li><strong>Skipping Unit Tests:</strong> Jacob opts to skip writing unit tests for the demonstration to save time, with a note that this is not recommended for actual development.</li>
+</ul>
+</li>
+<li><strong>Introduction to Dev Flow (MAUI Labs):</strong> The presenters touch upon &quot;Dev Flow&quot; as a key feature within the MAUI Labs repository that will be explored further.</li>
+</ul>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li><strong>AI is Revolutionizing .NET MAUI Development:</strong> The .NET MAUI team is actively integrating AI tools like Copilot CLI into their workflow, significantly increasing productivity and the number of code contributions.</li>
+<li><strong>&quot;Agentic Engineering&quot; is the New Norm:</strong> The terminology and perception of AI in development are shifting from &quot;vibe coding&quot; to more professional terms, reflecting deeper integration and utility.</li>
+<li><strong>Openness and Transparency:</strong> The .NET MAUI project aims to be open about its use of AI, sharing metrics and encouraging community feedback on AI-assisted contributions.</li>
+<li><strong>Prompt Engineering is Crucial:</strong> Crafting effective prompts for AI tools is key to achieving desired results, as demonstrated by Jacob's detailed prompt.</li>
+<li><strong>Acceptance of AI-Generated Code:</strong> There's a growing acceptance within the development community and the .NET MAUI team to use AI-generated code, provided it's verified and contributes to productivity.</li>
+<li><strong>Dev Flow is a Promising New Tool:</strong> A new tool called &quot;Dev Flow,&quot; integrated into the MAUI Labs repository, is highlighted as a significant advancement for MAUI development.</li>
+</ul>
+<h2 id="notable-quotes">Notable Quotes</h2>
+<ul>
+<li>&quot;Vibe coded this. Let me see if I can share my screen real quickly. Of course, he vibe coded it because that's what we do.&quot;</li>
+<li>&quot;Agentic engineering. Like it. That sounds professional enough to confuse people to think that we're actually still [laughter].&quot;</li>
+<li>&quot;Copilot authors is like already kind of like coming up there on we're we're we're going to halfway there and then Maui reviewer right so that's also a co-pilot that actually reviews the stuff.&quot;</li>
+<li>&quot;It's now completely turned around. Uh, but absolutely agree like you know, as long as you're in control of what's happening looking at the output verify that everything works there's no shame in using copilot or AI to do all the things right.&quot;</li>
+<li>&quot;Don't bother me until my agents are happy.&quot;</li>
+</ul>
+<hr />
+<h2 id="podcast-script">Podcast Script</h2>
+<p><strong>JORDAN:</strong> Hey everyone, and welcome to another episode! Happy May 1st to all of you out there.</p>
+<p><strong>MIKE:</strong> Happy May 1st! It's great to have you join us today, especially if it's a public holiday where you are.</p>
+<p><strong>JORDAN:</strong> Today, we are diving deep into something super exciting that's been happening behind the scenes with .NET MAUI and AI.</p>
+<p><strong>MIKE:</strong> Yeah, we've been hearing a lot about AI integration in development, and specifically how the MAUI team is leveraging these tools.</p>
+<p><strong>JORDAN:</strong> Exactly. We're going to explore how they're using tools like GitHub Copilot, not just for writing code, but for entire development workflows.</p>
+<p><strong>MIKE:</strong> And we've got a live demo lined up, which always makes things interesting, right? We'll see some &quot;agentic engineering&quot; in action.</p>
+<p><strong>JORDAN:</strong> That's right. The team has been using AI for authoring and reviewing pull requests, and they're even confident enough to release this into production.</p>
+<p><strong>MIKE:</strong> That's a huge step! It sounds like they're building a lot of trust in these AI tools, and that's something a lot of us are grappling with.</p>
+<p><strong>JORDAN:</strong> Absolutely. They're aiming to make us, the developers, more productive and successful with MAUI apps by integrating AI.</p>
+<p><strong>MIKE:</strong> So, the goal today is to build a mobile companion app for the MAUI community website, Maui Verse, using these AI tools.</p>
+<p><strong>JORDAN:</strong> And they're kicking this off with a &quot;YOLO mode&quot; session for Copilot CLI, which is a bit of a wild card.</p>
+<p><strong>MIKE:</strong> YOLO mode – you only live once! I'm curious how that's going to play out, but they did mention it hasn't formatted any hard drives... yet.</p>
+<p><strong>JORDAN:</strong> They've prepared a detailed prompt that guides the AI, specifying things like the target URL and avoiding certain libraries or features.</p>
+<p><strong>MIKE:</strong> It's interesting how they're not trying to hide the use of AI anymore. It's a shift from &quot;I used Copilot to help&quot; to &quot;Look what I built with AI.&quot;</p>
+<p><strong>JORDAN:</strong> I think that's a healthy evolution. As long as you're in control and verifying the output, there's no shame in leveraging these powerful tools.</p>
+<p><strong>MIKE:</strong> Definitely. It's like the whole ecosystem is learning how to collaborate with AI, and that includes how we review and accept code produced by it.</p>
+<p><strong>JORDAN:</strong> They even have agents that review pull requests before the humans do! It's like a multi-layered AI defense system.</p>
+<p><strong>MIKE:</strong> &quot;Don't bother me until my agents are happy.&quot; I love that! It sounds like a glimpse into the future of software development.</p>
+<p><strong>JORDAN:</strong> So, they've set up the prompt, specified the app name as &quot;Maui,&quot; and are linking it to the Maui Verse website for context.</p>
+<p><strong>MIKE:</strong> And importantly, they're pointing it to the latest .NET MAUI docs, because the AI models might not be up-to-date with the newest releases.</p>
+<p><strong>JORDAN:</strong> It's also crucial that they're telling Copilot to use specific MAUI skills and the new Dev Flow tool, which is the star of today's show.</p>
+<p><strong>MIKE:</strong> Ah, Dev Flow! I'm really looking forward to hearing more about that and seeing how it integrates into the development process.</p>
+<p><strong>JORDAN:</strong> And a key instruction: no emojis in the generated code. A small detail, but it highlights how they're refining the AI's output for clarity.</p>
+<p><strong>MIKE:</strong> That's a great point. It's not just about generating code, but generating <em>good</em> code that meets specific project needs and style guides.</p>
+<p><strong>JORDAN:</strong> They're also explicitly skipping unit tests for this demo, but wisely cautioning viewers not to do that in their own projects.</p>
+<p><strong>MIKE:</strong> Absolutely. Testing is fundamental, but for a live demo showcasing AI capabilities, I get the decision to streamline.</p>
+<p><strong>JORDAN:</strong> We'll have to see how this MAUI Verse companion app comes together using these AI-powered tools.</p>
+<p><strong>MIKE:</strong> It's definitely a fascinating look at how AI is becoming an integral part of the .NET MAUI development pipeline.</p>
+<p><strong>JORDAN:</strong> So, some key takeaways: AI is being used for authoring and reviewing code, and the team is building confidence in these tools for production releases.</p>
+<p><strong>MIKE:</strong> And the MAUI team is dedicated to making developers more productive by integrating AI directly into their workflows, exemplified by tools like Dev Flow.</p>
+<p><strong>JORDAN:</strong> Thanks for joining us today, everyone! We hope you found this glimpse into AI-assisted MAUI development insightful.</p>
+<p><strong>MIKE:</strong> We'll catch you in the next one. Happy coding, and embrace the AI!</p>
+</div>
+</section>
+<section class="section">
+<h2 class="section-heading">Transcript</h2>
+<p><a href="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_transcript.txt" class="transcript-download-link" download>📄 Download full transcript</a></p>
+</section>
+</div>
+
+<div class="player">
+  <div class="player-inner">
+    <button class="play-btn" id="playBtn" aria-label="Play / Pause" title="Play / Pause (Space)">
+      <svg id="iconPlay" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="iconPause" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" hidden><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+    </button>
+    <div class="track-meta"><span class="track-name">net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_podcast.wav</span></div>
+    <div class="seek-wrap">
+      <span class="time-lbl" id="currentTime">0:00</span>
+      <input type="range" id="seekBar" class="seek-bar" min="0" max="100" step="0.1" value="0">
+      <span class="time-lbl" id="totalTime">0:00</span>
+    </div>
+  </div>
+  <audio id="audioEl" preload="metadata"><source src="net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_podcast.wav" type="audio/wav"></audio>
+</div>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true"><span class="lightbox-close" aria-label="Close">&times;</span><div class="lightbox-content"><img id="lightboxImg" src="" alt="Full size frame"><p id="lightboxCaption" class="lightbox-caption"></p></div></div>
+
+<script>
+(function () {
+  var audio = document.getElementById('audioEl');
+  if (!audio) return;
+  var playBtn   = document.getElementById('playBtn');
+  var seekBar   = document.getElementById('seekBar');
+  var curTime   = document.getElementById('currentTime');
+  var totTime   = document.getElementById('totalTime');
+  var iconPlay  = document.getElementById('iconPlay');
+  var iconPause = document.getElementById('iconPause');
+  function fmt(s) {
+    if (isNaN(s) || !isFinite(s)) return '0:00';
+    var m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+  playBtn.addEventListener('click', function () { audio.paused ? audio.play() : audio.pause(); });
+  audio.addEventListener('play',  function () { iconPlay.setAttribute('hidden', ''); iconPause.removeAttribute('hidden'); });
+  audio.addEventListener('pause', function () { iconPlay.removeAttribute('hidden'); iconPause.setAttribute('hidden', ''); });
+  audio.addEventListener('ended', function () { iconPlay.removeAttribute('hidden'); iconPause.setAttribute('hidden', ''); seekBar.value = 0; curTime.textContent = '0:00'; });
+  audio.addEventListener('loadedmetadata', function () { totTime.textContent = fmt(audio.duration); });
+  audio.addEventListener('timeupdate', function () { if (!audio.duration) return; seekBar.value = (audio.currentTime / audio.duration) * 100; curTime.textContent = fmt(audio.currentTime); });
+  seekBar.addEventListener('input', function () { if (audio.duration) audio.currentTime = (seekBar.value / 100) * audio.duration; });
+  document.addEventListener('keydown', function (e) { if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') { e.preventDefault(); audio.paused ? audio.play() : audio.pause(); } });
+}());
+
+(function () {
+  var lb    = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var lbCap = document.getElementById('lightboxCaption');
+  if (!lb) return;
+  function open(src, caption) { lbImg.src = src; if (lbCap) lbCap.textContent = caption || ''; lb.classList.add('open'); }
+  function close() { lb.classList.remove('open'); lbImg.src = ''; if (lbCap) lbCap.textContent = ''; }
+  document.querySelectorAll('.gal-item img').forEach(function (img) { img.addEventListener('click', function () { open(img.src, img.getAttribute('data-caption')); }); });
+  lb.addEventListener('click', function (e) { if (e.target === lb || e.target.classList.contains('lightbox-close')) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+}());
+
+(function () {
+  var ytWin = null;
+  document.querySelectorAll('.ts-link').forEach(function (a) {
+    a.removeAttribute('target');
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = a.href;
+      var navigated = false;
+      if (ytWin) {
+        try {
+          if (!ytWin.closed) { ytWin.location.href = url; navigated = true; try { ytWin.focus(); } catch (_) {} }
+        } catch (_) { ytWin = null; }
+      }
+      if (!navigated) { ytWin = window.open(url, '_blank'); }
+    });
+  });
+}());</script>
+
+</body>
+</html>
