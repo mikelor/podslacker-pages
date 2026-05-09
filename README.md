@@ -13,6 +13,7 @@
 
 | Video | Transcript |
 |-------|------------|
+| [Net Maui Engineering Team Live Stream Ai Powered N](https://mikelor.github.io/podslacker-pages/google-cloud-next/net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_page.html) | [📄 Download](https://mikelor.github.io/podslacker-pages/google-cloud-next/net_maui_engineering_team_live_stream_ai_powered_n_vhrpjCJw1CY_transcript.txt) |
 | [The Agentic Shift In Software Development Life Cyc](https://mikelor.github.io/podslacker-pages/google-cloud-next/the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_page.html) | [📄 Download](https://mikelor.github.io/podslacker-pages/google-cloud-next/the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_transcript.txt) |
 
 ## maui
