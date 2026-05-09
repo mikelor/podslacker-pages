@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PodSlacker — The agentic shift in software development life cycle</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:      #0d1117;
+  --surface: #161b22;
+  --border:  #30363d;
+  --accent:  #58a6ff;
+  --text:    #e6edf3;
+  --muted:   #8b949e;
+  --code-bg: #1e2433;
+  --radius:  10px;
+  --ph:      72px;
+}
+html { scroll-behavior: smooth; }
+.ps-cta-bar {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  background: linear-gradient(90deg, #0d1f3c 0%, #111827 100%);
+  border-bottom: 1px solid rgba(88,166,255,.25);
+  padding: 10px 24px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+.ps-cta-logo {
+  width: 32px; height: 32px; object-fit: contain; border-radius: 50%;
+  flex-shrink: 0;
+}
+.ps-cta-bar span { flex: 1; }
+.ps-cta-bar strong { color: var(--text); }
+.ps-cta-btn {
+  display: inline-block; padding: 6px 16px; white-space: nowrap;
+  background: rgba(88,166,255,.12);
+  color: var(--accent);
+  border: 1px solid rgba(88,166,255,.35);
+  border-radius: 20px;
+  font-size: 0.82rem; font-weight: 600;
+  text-decoration: none;
+  transition: background .2s;
+}
+.ps-cta-btn:hover { background: rgba(88,166,255,.24); }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+body.has-player { padding-bottom: calc(var(--ph) + 8px); }
+.page-header {
+  background: linear-gradient(135deg, #1a1f35 0%, #0d1117 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 36px 24px;
+  text-align: center;
+}
+.page-header h1 { font-size: clamp(1.4rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; }
+.vid-badge { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: var(--muted); font-family: "SF Mono", Consolas, monospace; }
+.vid-badge a { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; }
+.vid-badge a:hover { opacity: .8; }
+.source-link { display: inline-block; margin-top: 14px; padding: 6px 16px; background: rgba(88,166,255,.1); color: var(--accent); border: 1px solid rgba(88,166,255,.3); border-radius: 20px; font-size: 0.84rem; text-decoration: none; transition: background .2s; }
+.source-link:hover { background: rgba(88,166,255,.2); }
+.content { max-width: 860px; margin: 0 auto; padding: 32px 24px; }
+.section { margin-bottom: 48px; }
+.section-heading { font-size: 0.75rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.prose h1, .prose h2, .prose h3, .prose h4 { font-weight: 600; line-height: 1.3; margin: 1.5em 0 .5em; color: var(--text); }
+.prose h1 { font-size: 1.7rem; }
+.prose h2 { font-size: 1.3rem; color: var(--accent); }
+.prose h3 { font-size: 1.1rem; }
+.prose p { margin-bottom: 1em; }
+.prose ul, .prose ol { padding-left: 1.6em; margin-bottom: 1em; }
+.prose li { margin-bottom: .3em; }
+.prose strong { font-weight: 600; }
+.prose code { font-family: "SF Mono", Consolas, monospace; font-size: .875em; background: var(--code-bg); padding: .15em .4em; border-radius: 4px; color: #79c0ff; }
+.prose pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; overflow-x: auto; margin-bottom: 1em; }
+.prose pre code { background: none; padding: 0; }
+.prose blockquote { border-left: 3px solid var(--accent); padding: 8px 16px; margin: 0 0 1em; color: var(--muted); background: rgba(88,166,255,.06); border-radius: 0 4px 4px 0; }
+.prose table { width: 100%; border-collapse: collapse; margin-bottom: 1em; font-size: .9em; }
+.prose th, .prose td { padding: 8px 12px; border: 1px solid var(--border); text-align: left; }
+.prose th { background: var(--surface); font-weight: 600; }
+.prose tr:nth-child(even) { background: rgba(255,255,255,.02); }
+.prose a { color: var(--accent); text-decoration: none; }
+.prose a:hover { text-decoration: underline; }
+.prose hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+.md-fallback { white-space: pre-wrap; font-size: .88em; color: var(--muted); }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.gal-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color .2s, transform .2s; }
+.gal-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.gal-item img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; cursor: zoom-in; }
+.gal-caption { padding: 8px 10px; font-size: .8rem; color: var(--muted); line-height: 1.45; }
+.transcript-details { margin-top: 8px; }
+.transcript-summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; padding: 8px 0; list-style: none; user-select: none; }
+.transcript-summary::-webkit-details-marker { display: none; }
+.transcript-summary::marker { display: none; }
+.transcript-summary::before { content: "▶ "; font-size: .7em; }
+details[open] .transcript-summary::before { content: "▼ "; }
+.transcript-body { margin-top: 12px; display: flex; flex-direction: column; gap: 3px; max-height: 420px; overflow-y: auto; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.ts-line { font-size: .875rem; line-height: 1.55; color: var(--text); }
+.ts-link { color: var(--accent); text-decoration: none; font-family: "SF Mono", Consolas, monospace; font-size: .8rem; }
+.ts-link:hover { text-decoration: underline; }
+.transcript-download-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; background: rgba(88,166,255,.08); color: var(--accent); border: 1px solid rgba(88,166,255,.25); border-radius: 20px; font-size: 0.88rem; text-decoration: none; transition: background .2s; }
+.transcript-download-link:hover { background: rgba(88,166,255,.2); }
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.88); z-index: 2000; align-items: center; justify-content: center; cursor: zoom-out; }
+.lightbox.open { display: flex; }
+.lightbox-content { display: flex; flex-direction: column; align-items: center; gap: 12px; cursor: default; max-width: 92vw; }
+.lightbox-content img { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: var(--radius); box-shadow: 0 8px 48px rgba(0,0,0,.7); }
+.lightbox-caption { color: #cdd5e0; font-size: .88rem; line-height: 1.5; text-align: center; max-width: 700px; min-height: 1.2em; }
+.lightbox-close { position: absolute; top: 16px; right: 20px; font-size: 2rem; color: #fff; cursor: pointer; line-height: 1; opacity: .7; transition: opacity .15s; }
+.lightbox-close:hover { opacity: 1; }
+.player { position: fixed; bottom: 0; left: 0; right: 0; height: var(--ph); background: rgba(13,17,23,.93); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid var(--border); z-index: 1000; }
+.player-inner { max-width: 860px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 14px; padding: 0 24px; }
+.play-btn { flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #0d1117; transition: background .15s, transform .1s; }
+.play-btn:hover { background: #79bbff; }
+.play-btn:active { transform: scale(.94); }
+.track-meta { flex-shrink: 0; max-width: 200px; overflow: hidden; }
+.track-name { font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: "SF Mono", Consolas, monospace; }
+.seek-wrap { flex: 1; display: flex; align-items: center; gap: 10px; }
+.time-lbl { font-size: .76rem; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 34px; font-family: "SF Mono", Consolas, monospace; }
+.seek-bar { flex: 1; -webkit-appearance: none; appearance: none; height: 4px; border-radius: 2px; background: var(--border); cursor: pointer; outline: none; }
+.seek-bar::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); cursor: pointer; transition: transform .1s; }
+.seek-bar:hover::-webkit-slider-thumb { transform: scale(1.3); }
+.seek-bar::-moz-range-thumb { width: 14px; height: 14px; border: none; border-radius: 50%; background: var(--accent); cursor: pointer; }
+@media (max-width: 600px) {
+  .track-meta { display: none; }
+  .page-header { padding: 20px 16px; }
+  .content { padding: 20px 16px; }
+}
+</style>
+</head>
+<body class="has-player">
+
+<div class="ps-cta-bar">
+  <img src="https://podslacker.com/logo.png" alt="PodSlacker" class="ps-cta-logo" onerror="this.style.display='none'" />
+  <span>This SlackCast was generated by <strong>PodSlacker</strong> &mdash; turn any YouTube video into a podcast.</span>
+  <a href="https://podslacker.com" target="_blank" rel="noopener" class="ps-cta-btn">Try PodSlacker now &#8599;</a>
+</div>
+
+<header class="page-header">
+  <h1>The agentic shift in software development life cycle</h1>
+  <div class="vid-badge">Created with <a href="https://podslacker.com" target="_blank" rel="noopener">PodSlacker</a> &nbsp;·&nbsp; 161TA9Z0vxk</div><br>
+  <a class="source-link" href="https://youtu.be/161TA9Z0vxk?si=gtuGg94XvTzUtrPI" target="_blank" rel="noopener">Watch on YouTube &#8599;</a>
+</header>
+
+<div class="content">
+
+<section class="section">
+<h2 class="section-heading">Key Moments</h2>
+<div class="gallery">
+<figure class="gal-item"><img src="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_01.jpg" alt="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_01.jpg" loading="lazy" data-caption="So, thank you so much for showing up at 8:00 in the morning and it means more because you were you are all in…"><figcaption class="gal-caption">So, thank you so much for showing up at 8:00 in the morning and it means more because you were you are all in…</figcaption></figure>
+<figure class="gal-item"><img src="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_02.jpg" alt="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_02.jpg" loading="lazy" data-caption="8:00 in the morning and it means more So, thank you so much for showing up at because you were you are all in…"><figcaption class="gal-caption">8:00 in the morning and it means more So, thank you so much for showing up at because you were you are all in…</figcaption></figure>
+<figure class="gal-item"><img src="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_03.jpg" alt="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_03.jpg" loading="lazy" data-caption="right? So, agentic shift in software development life cycle. So from the time So, what are we going to talk…"><figcaption class="gal-caption">right? So, agentic shift in software development life cycle. So from the time So, what are we going to talk…</figcaption></figure>
+<figure class="gal-item"><img src="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_04.jpg" alt="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_04.jpg" loading="lazy" data-caption="heard so much about agents right and AI it&#39;s all about AI and agents right next for the last two days you must…"><figcaption class="gal-caption">heard so much about agents right and AI it&#39;s all about AI and agents right next for the last two days you must…</figcaption></figure>
+<figure class="gal-item"><img src="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_05.jpg" alt="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_frame_05.jpg" loading="lazy" data-caption="everywhere so we are going to talk about it&#39;s all about AI and agents right the adoption trends in AI how do…"><figcaption class="gal-caption">everywhere so we are going to talk about it&#39;s all about AI and agents right the adoption trends in AI how do…</figcaption></figure>
+
+</div>
+</section>
+<section class="section">
+<h2 class="section-heading">Summary &amp; Script</h2>
+<div class="prose"><h1 id="the-agentic-shift-in-software-development-life-cycle">The agentic shift in software development life cycle</h1>
+<p><strong>Source:</strong> <a href="https://youtu.be/161TA9Z0vxk?si=gtuGg94XvTzUtrPI">https://youtu.be/161TA9Z0vxk?si=gtuGg94XvTzUtrPI</a><br />
+<strong>Video ID:</strong> <code>161TA9Z0vxk</code></p>
+<hr />
+<h2 id="ai-agents-in-software-development-from-code-generation-to-production">AI Agents in Software Development: From Code Generation to Production</h2>
+<p>This presentation discusses the growing adoption of AI agents in the software development lifecycle (SDLC), focusing on managing multiple agents, ensuring code quality, and successfully deploying AI-generated code into production. The speakers highlight current trends, challenges, and introduce a new open-source framework, &quot;Cyan,&quot; designed for orchestrating AI agents.</p>
+<h3 id="major-sections-and-topics">Major Sections and Topics:</h3>
+<p><strong>1. AI Adoption Trends in Software Development:</strong></p>
+<ul>
+<li><strong>Widespread Usage:</strong> A significant majority (around 90%) of developers are actively using AI in their work, with approximately 70% using it for writing new code (greenfield development).</li>
+<li><strong>AI as an Amplifier:</strong> The primary role of AI in software development is seen as an amplifier, boosting the quality of existing context or, conversely, amplifying errors if the input is flawed.</li>
+<li><strong>Evolution of AI:</strong> The shift from simple retrieval to reasoning, and from prompt-response to plan-execute models, has been rapid. The introduction of agents signifies a move towards more complex task execution for building applications or modernizing code.</li>
+<li><strong>Human-in-the-Loop:</strong> While fully autonomous AI systems are not yet a reality, the concept of &quot;humans in the loop&quot; is present, particularly in areas like AI-assisted code reviews.</li>
+</ul>
+<p><strong>2. Challenges with Multiple AI Agents:</strong></p>
+<ul>
+<li><strong>Conflict and Interference:</strong> As more agents are deployed, the potential for conflicts and agents stepping on each other's toes increases.</li>
+<li><strong>Isolation and Security:</strong> Ensuring that custom and pre-built agents operate securely without causing adverse effects (like accidental deletion of data) is crucial.</li>
+<li><strong>Agent-Model Coupling:</strong> The tight coupling between specific agents and their associated AI models can limit flexibility.</li>
+</ul>
+<p><strong>3. Introducing &quot;Cyan&quot; - An AI Agent Orchestrator:</strong></p>
+<ul>
+<li><strong>Concept:</strong> Cyan is described as a &quot;hypervisor of agents,&quot; a container-based orchestration tool designed for managing concurrent LLM agents.</li>
+<li><strong>Functionality:</strong> It allows for parallel execution of multiple agents, supports various LLMs (not just Google's), and provides isolated, secure environments for agent execution using containers.</li>
+<li><strong>Demo Highlights:</strong>
+<ul>
+<li>Easy local installation (approx. 15 minutes).</li>
+<li>Ability to configure and map different LLM models to container images.</li>
+<li>Agents run in isolated T-max sessions, preventing impact on the local workspace.</li>
+<li>Demonstrates isolation through <code>worktree list</code>, showing that agent-created files are in a separate directory.</li>
+<li>Agents can be detached, continuing to run in the background, and their work persists even after the agent is stopped.</li>
+<li>Cyan is designed for multi-agent orchestration, allowing agents to spawn, converge, or diverge tasks.</li>
+</ul>
+</li>
+<li><strong>Benefits:</strong> Parallel execution, independence of agents, harness-agnostic (supports various LLMs), open-source, and community-driven.</li>
+</ul>
+<p><strong>4. Taking AI-Generated Code to Production:</strong></p>
+<ul>
+<li><strong>The Bottleneck:</strong> While AI accelerates code generation, the overall development velocity is still hampered by bottlenecks in the later stages of the pipeline (testing, deployment, etc.).</li>
+<li><strong>Goal:</strong> To ensure that the increased productivity from AI-driven code development translates into faster delivery of code to production.</li>
+</ul>
+<h3 id="key-takeaways">Key Takeaways:</h3>
+<ul>
+<li>AI is no longer a niche tool; it's becoming integral to the software development workflow for a vast majority of developers.</li>
+<li>The evolution of AI from simple code generation to more complex reasoning and planning capabilities is paving the way for agent-based development.</li>
+<li>Managing multiple AI agents presents significant challenges related to security, isolation, and potential conflicts.</li>
+<li>&quot;Cyan&quot; is presented as a promising solution for orchestrating AI agents securely and efficiently, enabling parallel execution and maintaining isolation.</li>
+<li>The ultimate goal is to bridge the gap between AI-generated code and smooth production deployment to realize the full productivity gains.</li>
+</ul>
+<h3 id="notable-quotes">Notable Quotes:</h3>
+<ul>
+<li>&quot;Almost 90% of the people are using AI at work.&quot;</li>
+<li>&quot;The primary role of AI in software development is that of an amplifier.&quot;</li>
+<li>&quot;With agents coming in, you are not just typing a prompt and getting a response and then doing an iterative prompting.&quot;</li>
+<li>&quot;Think about can as hypervisor of agents.&quot;</li>
+<li>&quot;The net effect of all of these things is that the velocity of developing code has gone way up. The productivity of developers has gone way up. But at the same time, the velocity is impacted by how the code actually makes it to production.&quot;</li>
+</ul>
+<hr />
+<h2 id="podcast-script">Podcast Script</h2>
+<p><strong>JORDAN:</strong> Hey everyone, and welcome back to our podcast! I'm Jordan.</p>
+<p><strong>MIKE:</strong> And I'm Mike. Today, we're diving into something that's a huge buzzword right now: AI agents in software development.</p>
+<p><strong>JORDAN:</strong> Absolutely, Mike. We've seen so much about agents and AI at events like Google Cloud Next, and we're going to unpack what that really means for the software development lifecycle.</p>
+<p><strong>MIKE:</strong> Yeah, it's not just about hearing &quot;AI&quot; everywhere, but really understanding how these agents are being adopted, how we manage them, especially when they work together, and crucially, how we get the code they help create into production.</p>
+<p><strong>JORDAN:</strong> The transcript we're referencing highlights a significant finding from the Dora report: nearly 90% of developers are actively using AI at work. That's a massive adoption rate.</p>
+<p><strong>MIKE:</strong> It really is! And it's not just for new &quot;greenfield&quot; development either; almost 70% are using AI for writing new code. It’s like AI has become a co-pilot for coders.</p>
+<p><strong>JORDAN:</strong> The report also frames AI as an &quot;amplifier.&quot; This is a key concept – if your context and intent are clear, AI amplifies that goodness. But if it's messy, it can amplify the mess too.</p>
+<p><strong>MIKE:</strong> That &quot;amplifier&quot; idea really struck me. It means the quality of our input directly impacts the quality of the output we get from these AI tools. We have to be deliberate.</p>
+<p><strong>JORDAN:</strong> And remember how quickly things are evolving? The transcript mentioned that at Google, the adoption of AI for writing new code has jumped from 25% a little over a year ago to an impressive 75% now.</p>
+<p><strong>MIKE:</strong> That's a mind-blowing acceleration! It's shifting from simple retrieval and prompt-response to reasoning and planning. The move to &quot;agents&quot; seems to be the next frontier.</p>
+<p><strong>JORDAN:</strong> Exactly. The concept of &quot;humans in the loop&quot; is still essential for now, even with advanced agents. Think of code review agents on GitHub – they kick in automatically, but human oversight is still there.</p>
+<p><strong>MIKE:</strong> But what happens when you have <em>many</em> agents working? The transcript pointed out that this can lead to conflicts, agents stepping on each other's toes, and potential security risks. That's where things get complicated.</p>
+<p><strong>JORDAN:</strong> This is where the solution presented, called &quot;Cyan,&quot; comes in. It's described as an open-source &quot;hypervisor&quot; for AI agents, managing them in isolated, secure environments using containers.</p>
+<p><strong>MIKE:</strong> A &quot;hypervisor for agents&quot; – that’s a really interesting analogy! So, instead of agents potentially causing chaos on your main system, Cyan isolates them, much like a hypervisor isolates virtual machines.</p>
+<p><strong>JORDAN:</strong> Precisely. The demo showcased how Cyan can run agents in separate T-max sessions, ensuring that even if an agent goes rogue or does something unexpected, it doesn't impact your primary development workspace.</p>
+<p><strong>MIKE:</strong> That isolation and security feature is crucial. The idea that an agent can't just go and do an <code>rm -rf</code> on your main project files is a huge relief.</p>
+<p><strong>JORDAN:</strong> And it's not just for single agents. Cyan is designed for multi-agent orchestration, allowing agents to spawn, converge, or diverge as needed, all managed and orchestrated by the platform.</p>
+<p><strong>MIKE:</strong> So, the promise here is harnessing the power of multiple specialized agents working together without the added headache of them interfering with each other or your existing systems.</p>
+<p><strong>JORDAN:</strong> Moving beyond code generation, the next big hurdle is getting that AI-generated code into production. The transcript hinted that this is where bottlenecks can appear, ironically slowing down the overall pipeline.</p>
+<p><strong>MIKE:</strong> That makes perfect sense. If we're accelerating code creation with AI, we need to ensure the rest of the software development lifecycle can keep up. Otherwise, we're just creating code that sits idle.</p>
+<p><strong>JORDAN:</strong> Absolutely. So, the key takeaways are the rapid adoption of AI, the amplifier effect, the evolving capabilities from prompts to planning, and the critical need for orchestration tools like Cyan to manage multiple agents securely.</p>
+<p><strong>MIKE:</strong> And don't forget the ultimate goal: making sure that the boosted developer productivity translates into faster delivery of valuable, production-ready software. It's not just about writing code faster, but shipping it faster.</p>
+<p><strong>JORDAN:</strong> That's a great summary, Mike. We've covered a lot of ground on AI agents in software development today.</p>
+<p><strong>MIKE:</strong> We have indeed! Thanks for tuning in, everyone. We'll catch you next time.</p>
+</div>
+</section>
+<section class="section">
+<h2 class="section-heading">Transcript</h2>
+<p><a href="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_transcript.txt" class="transcript-download-link" download>📄 Download full transcript</a></p>
+</section>
+</div>
+
+<div class="player">
+  <div class="player-inner">
+    <button class="play-btn" id="playBtn" aria-label="Play / Pause" title="Play / Pause (Space)">
+      <svg id="iconPlay" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="iconPause" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" hidden><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+    </button>
+    <div class="track-meta"><span class="track-name">the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_podcast.wav</span></div>
+    <div class="seek-wrap">
+      <span class="time-lbl" id="currentTime">0:00</span>
+      <input type="range" id="seekBar" class="seek-bar" min="0" max="100" step="0.1" value="0">
+      <span class="time-lbl" id="totalTime">0:00</span>
+    </div>
+  </div>
+  <audio id="audioEl" preload="metadata"><source src="the_agentic_shift_in_software_development_life_cyc_161TA9Z0vxk_podcast.wav" type="audio/wav"></audio>
+</div>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true"><span class="lightbox-close" aria-label="Close">&times;</span><div class="lightbox-content"><img id="lightboxImg" src="" alt="Full size frame"><p id="lightboxCaption" class="lightbox-caption"></p></div></div>
+
+<script>
+(function () {
+  var audio = document.getElementById('audioEl');
+  if (!audio) return;
+  var playBtn   = document.getElementById('playBtn');
+  var seekBar   = document.getElementById('seekBar');
+  var curTime   = document.getElementById('currentTime');
+  var totTime   = document.getElementById('totalTime');
+  var iconPlay  = document.getElementById('iconPlay');
+  var iconPause = document.getElementById('iconPause');
+  function fmt(s) {
+    if (isNaN(s) || !isFinite(s)) return '0:00';
+    var m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+  playBtn.addEventListener('click', function () { audio.paused ? audio.play() : audio.pause(); });
+  audio.addEventListener('play',  function () { iconPlay.setAttribute('hidden', ''); iconPause.removeAttribute('hidden'); });
+  audio.addEventListener('pause', function () { iconPlay.removeAttribute('hidden'); iconPause.setAttribute('hidden', ''); });
+  audio.addEventListener('ended', function () { iconPlay.removeAttribute('hidden'); iconPause.setAttribute('hidden', ''); seekBar.value = 0; curTime.textContent = '0:00'; });
+  audio.addEventListener('loadedmetadata', function () { totTime.textContent = fmt(audio.duration); });
+  audio.addEventListener('timeupdate', function () { if (!audio.duration) return; seekBar.value = (audio.currentTime / audio.duration) * 100; curTime.textContent = fmt(audio.currentTime); });
+  seekBar.addEventListener('input', function () { if (audio.duration) audio.currentTime = (seekBar.value / 100) * audio.duration; });
+  document.addEventListener('keydown', function (e) { if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') { e.preventDefault(); audio.paused ? audio.play() : audio.pause(); } });
+}());
+
+(function () {
+  var lb    = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var lbCap = document.getElementById('lightboxCaption');
+  if (!lb) return;
+  function open(src, caption) { lbImg.src = src; if (lbCap) lbCap.textContent = caption || ''; lb.classList.add('open'); }
+  function close() { lb.classList.remove('open'); lbImg.src = ''; if (lbCap) lbCap.textContent = ''; }
+  document.querySelectorAll('.gal-item img').forEach(function (img) { img.addEventListener('click', function () { open(img.src, img.getAttribute('data-caption')); }); });
+  lb.addEventListener('click', function (e) { if (e.target === lb || e.target.classList.contains('lightbox-close')) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+}());
+
+(function () {
+  var ytWin = null;
+  document.querySelectorAll('.ts-link').forEach(function (a) {
+    a.removeAttribute('target');
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = a.href;
+      var navigated = false;
+      if (ytWin) {
+        try {
+          if (!ytWin.closed) { ytWin.location.href = url; navigated = true; try { ytWin.focus(); } catch (_) {} }
+        } catch (_) { ytWin = null; }
+      }
+      if (!navigated) { ytWin = window.open(url, '_blank'); }
+    });
+  });
+}());</script>
+
+</body>
+</html>
